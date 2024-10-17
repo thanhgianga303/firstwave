@@ -1,0 +1,438 @@
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px){
+    #banner{
+        .jumbotron{
+            padding: 240px 0 120px 0 !important;
+        }
+    }
+
+
+    #works-section{
+        .works-slider{
+    
+            &.slick-slider{
+                .work-item{
+                    width: 350px !important;
+                }
+            }
+            .work-item{
+                .work-holder{
+                    .proj-prev-img{
+                        height: 225px;
+                    }
+                }   
+            }
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .section-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .navbar{
+        .navbar-nav{
+            max-width: 720px;
+            margin-left:auto;
+            margin-right: auto;
+            padding-top: 50px !important;
+            padding-bottom: 50px !important;
+
+            .nav-item{
+
+                .nav-link {
+                    font-size: 48px !important;
+                    font-weight: 800 !important;
+                    line-height: 71.04px;
+                }
+            }
+        }
+
+        .navbar-collapse{
+            position: fixed;
+            right: 100%;
+            top: 98px;
+            background: #000;
+            width: 100%;
+            bottom: 0;
+            z-index: 5;
+            transition: all .3s ease;
+            overflow: hidden;
+          }
+
+          .navbar-collapse.collapsing {
+            height: auto !important;
+            margin-right: 55%;
+            transition: all 0.3s ease;
+            display: block;
+          }
+      
+          .navbar-collapse.show {
+              right: 0;
+          }
+    }
+    
+
+    #banner{
+        .jumbotron{
+            padding: 220px 0 100px 0 !important;
+        
+            h1{
+                font-size: 100px;
+                line-height: 100px;
+            } 
+        
+           .lead{
+                font-size: 22px;
+                line-height: 28px;
+           }
+        }
+    }
+
+    #works-section{
+        .works-slider{
+    
+            &.slick-slider{
+                .work-item{
+                    width: 300px !important;
+                }
+            }
+            .work-item{
+                .work-holder{
+                    .proj-prev-img{
+                        height: 205px;
+                    }
+                }   
+            }
+        }
+    }  
+
+    #work-banner{
+        .jumbotron{
+            padding: 200px 0 120px 0 !important;
+        
+            h1{
+                font-size: 100px;
+                line-height: 100px;
+            } 
+        }
+    }
+
+
+    #view-work-banner{
+        .jumbotron {
+
+            h1{
+                font-size: 60px !important;
+                line-height: 60px !important;
+           }    
+        }
+    }
+
+    #about{
+        padding-top: 150px !important;
+        padding-bottom: 150px !important;
+    }
+
+
+    #our-reach{
+        h3{
+            font-size: 92px !important;
+        }
+
+        .text-lead {
+            font-size: 18px !important;
+            line-height: 21px !important;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .container{
+        max-width: 95% !important;
+    }
+
+    .section-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .section-header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .navbar{
+        .navbar-nav{
+            max-width: 95% !important;
+        }
+    }
+
+
+    #banner{
+        .jumbotron{
+            padding: 200px 0 80px 0 !important;
+
+            h1{
+                font-size: 80px;
+                line-height: 80px;
+            } 
+        
+           .lead{
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            .btn {
+                font-size: 16px;
+                font-weight: 600;
+                padding: 20px 26px;
+            }
+        }
+    }
+
+    #work-banner{
+        .jumbotron{
+        
+            h1{
+                font-size: 80px;
+                line-height: 80px;
+            } 
+        }
+    }
+
+
+    #view-work-banner{
+        .jumbotron {
+            padding: 220px 0 35px 0 !important;
+
+            h1{
+                font-size: 50px !important;
+                line-height: 50px !important;
+           }    
+        
+           .lead{
+               font-size: 16px !important;
+           }
+        }
+    }
+
+    #works-section{
+        .section-header{
+            padding-bottom: 55px !important;
+
+            .section-title{
+                font-size: 22px !important;
+                line-height: 22px !important;
+            }
+    
+            a{
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    #about{
+        .caption {
+            font-size: 60px;
+        }
+    
+        p{
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    #our-reach{
+        h3{
+            font-size: 75px !important;
+        }
+
+        .text-lead {
+            font-size: 14px !important;
+            line-height: 18px !important;
+        }
+    }
+
+    #footer {
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0 -7.5px;
+        
+            li{
+              display: inline-block;
+              margin: 0 5px !important;
+
+                i{
+                  font-size: 2.5rem;
+                }
+        
+                &.soc-divider span {
+                  color: $primary-color;
+                  line-height: 75px;
+                  font-size: 30px;
+                  font-weight: 300;
+                  margin:5px;
+                  vertical-align: middle;
+                }
+
+                img{
+                    height: 30px !important;
+                }
+            }
+          }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    
+    #banner{
+        .jumbotron{
+            padding: 220px 0 60px 0 !important;
+        
+            h1{
+                font-size: 47px !important;
+                line-height: 47px !important;
+            } 
+        
+           .lead{
+                font-size: 16px;
+                line-height: 20px;
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    #works-section{
+
+        .section-header{
+            padding-bottom: 35px !important;
+            
+            .section-title{
+                font-size: 20px !important;
+                line-height: 20px !important;
+            }
+    
+            a{
+                font-size: 15px !important;
+            }
+        }
+
+        .works-slider{
+    
+            &.slick-slider{
+                .work-item{
+                    width: 280px !important;
+                }
+            }
+            .work-item{
+                .work-holder{
+                    .proj-prev-img{
+                        height: 189px;
+                    }
+                }   
+            }
+
+            .slick-arrow{
+                width: 60px;
+    
+                &.slick-next{
+                    &::before{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    } 
+    
+    #work-banner{
+        
+        .jumbotron{
+            padding: 180px 0 40px 0 !important;
+
+            h1{
+                font-size: 65px !important;
+                line-height: 65px !important;
+            } 
+        }
+    }
+
+    #view-work-banner{
+        .jumbotron {
+            padding: 180px 0 35px 0 !important;
+
+            h1{
+                font-size: 40px !important;
+                line-height: 40px !important;
+           }    
+        
+           .lead{
+               font-size: 14px !important;
+           }
+        }
+    }
+
+
+    #about{
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+
+        .caption {
+            font-size: 40px !important;
+        }
+    
+        p{
+            font-size: 16px !important;
+            line-height: 20px !important;
+        }
+    }
+
+
+    #work-gallery-box{
+        padding-top:20px !important;
+        padding-bottom:20px !important;
+    
+        .work-gallery{
+            .gallery-item{
+                text-align: center;
+
+                .gallery-thumb-image{
+                    margin:auto;
+                    max-width: 90%;
+                }
+    
+                .image-counter{
+                    display:block !important;
+                }
+            }
+        }
+    }
+
+
+    .slick-lightbox{
+        .slick-arrow{
+            &::before{
+                font-size: 40px !important;
+            }
+    
+            &.slick-prev{
+                left: 3% !important;
+            }
+    
+            &.slick-next{
+                right: 3% !important;
+            }   
+        }
+    }
+}

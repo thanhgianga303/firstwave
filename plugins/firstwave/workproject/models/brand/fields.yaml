@@ -1,0 +1,22 @@
+fields:
+    title:
+        label: 'Brand Title'
+        span: left
+        placeholder: 'Brand Title'
+        type: text
+    slug:
+        label: 'Brand Slug'
+        span: right
+        placeholder: brand-slug
+        preset:
+            field: title
+            type: slug
+        type: text
+tabs:
+    fields:
+        description:
+            label: Description
+            size: large
+            span: full
+            type: textarea
+            tab: Content

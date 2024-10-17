@@ -1,0 +1,46 @@
+// Fonts 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
+@import url(https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap);
+
+
+$light: #fff;
+// $primary-color: #13b1cd;
+$secondary-color: #f5f8f9;
+$event-color: #c54041;
+$law-color: #b99769;
+$black: #242424;
+$border-color:#dedede;
+$primary-font:'Montserrat', sans-serif;
+$secondary-font:'Poppins', sans-serif;
+$extra-font:'Hind', serif;
+
+$primary:#006699;
+$primary-color: #006699;
+$secondary-color:#f37321;
+
+$bg-gray:#f9f9f9;
+
+//text color
+$text-lighter-white:#e6e6e6;
+$text-color: #3498db;
+$white: #fff;
+
+$major_color: #5F25F4;
+$text_color: #222328;
+$color-gray: #C4C4C4;
+
+
+// hex
+$hex-border-color:#5F25F4;
+$hex-inner-color:#000;
+$hex-icon-color:$white;
+
+$hex-width:111px;
+$hex-height:66px;
+
+$hex-pos:calc( 1px - (#{$hex-height} / 2));
+
+$hex-border-tb:calc(#{$hex-height} / 2);
+$hex-border-lr:calc(#{$hex-width} / 2);
+
+$icon-size:60px;

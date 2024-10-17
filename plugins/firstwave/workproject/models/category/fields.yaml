@@ -1,0 +1,22 @@
+fields:
+    title:
+        label: 'Category Title'
+        span: auto
+        placeholder: 'Category Title'
+        type: text
+    slug:
+        label: 'Category Slug'
+        span: auto
+        placeholder: category-slug
+        preset:
+            field: title
+            type: slug
+        type: text
+tabs:
+    fields:
+        description:
+            label: descrption
+            size: large
+            span: full
+            type: textarea
+            tab: Content

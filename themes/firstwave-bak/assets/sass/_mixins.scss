@@ -1,0 +1,46 @@
+.scaleIn {
+  -webkit-animation-name: scaleIn;
+  animation-name: scaleIn;
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.gradiant {
+  background-image: -moz-linear-gradient( 90deg, rgb(44,170,179) 0%, rgb(44,140,179) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(44,170,179) 0%, rgb(44,140,179) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(44,170,179) 0%, rgb(44,140,179) 100%);
+}
+
+.gradiant-horizontal {
+  background-image: -moz-linear-gradient( 4deg, rgb(44,170,179) 0%, rgb(44,140,179) 100%);
+  background-image: -webkit-linear-gradient( 4deg, rgb(44,170,179) 0%, rgb(44,140,179) 100%);
+  background-image: -ms-linear-gradient( 4deg, rgb(44,170,179) 0%, rgb(44,140,179) 100%);
+}

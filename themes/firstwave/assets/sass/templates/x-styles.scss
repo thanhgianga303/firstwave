@@ -1,0 +1,185 @@
+#about{
+    &.fwx{
+        background: linear-gradient($dark,45%, $x-primary);
+        padding-top:350px;
+        padding-bottom:230px;
+
+        p{
+            font-family: $secondary-font;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 35.2px;
+            padding: 0;
+            margin:0;
+        }
+    }
+}
+
+#process{
+    &.fwx{
+        background: linear-gradient($x-primary,50%, $x-primary);
+
+        .main-timeline {
+            position: relative;
+            padding-top:132px;
+            padding-bottom:132px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                background-color: #fff;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3px;
+            }
+
+            .timeline {
+                position: relative;
+                background-color: inherit;
+                width: 50%;
+
+                .card{
+                    background: transparent;
+                    border:0;
+
+                    h3{
+                        color:#fff;
+                        font-size:72px;
+                        line-height: 110%;
+                        font-weight: 500;
+                    }
+                }
+            
+                &.left {
+                    padding: 0px;
+                    left: 0;
+                    text-align: right;
+                }
+                
+                &.right {
+                    padding: 0px;
+                    left: 50%;
+                }
+            }
+        }
+    }
+}
+
+#what-we-do{
+    &.fwx{
+        background: linear-gradient($x-primary,45%, $dark);
+        
+        .card-holder{
+            padding:15px;
+
+
+            h2{
+                color:#fff;
+                font-size: 36px;
+                line-height: 39.6px;
+                font-weight: 600;
+            }
+
+            ul{
+
+                li{
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 26.4px;
+                }
+            }
+        }
+    } 
+}
+
+#works{
+    &.fwx{
+        background: linear-gradient($dark, $x-primary, $dark);
+
+        .masonry-row > div{
+            border: none !important;
+
+            &:nth-child(even){
+                .card{
+                    height:428px;
+                }
+            }
+
+            .card{
+                height: 233px;
+                border:2px solid transparent !important;
+                background: transparent !important;
+
+                .card-body{
+                    .card-cover{
+                        background-size: cover !important;
+                        background-position: center !important;
+                        width: 100%;
+                        position: absolute;
+                        top:0;
+                        bottom: 0;
+                        left:0;
+                        right:0;
+                    }
+                }
+
+                &:hover{
+                    border : 2px solid $primary !important;
+                }
+            }
+        }
+    }
+}
+
+.x-banner-black{
+    height:102px;
+}
+
+
+#x-view-work-content{
+    &.fwx{
+        background: linear-gradient($dark,25%, $x-primary);
+        padding-top:250px;
+        
+        .content-title{
+            color: #fff;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 110%;
+        }
+
+        .content-sub-title{
+            color: #fff;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 145%;
+        }
+
+        .x-view-work-description{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 110%;
+        }
+    }
+}
+
+#view-work-banner{
+    &.fwx{
+        background: linear-gradient($x-primary,$x-primary);
+    }
+}
+
+#x-view-work-more{
+    &.fwx{
+        background: linear-gradient($x-primary,65%, $dark);
+       
+        .work-more-slider{
+            height: 450px;
+        }
+    }
+}

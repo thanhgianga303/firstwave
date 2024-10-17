@@ -1,0 +1,10 @@
+name: Brands
+form: $/firstwave/workproject/models/brand/fields.yaml
+modelClass: FirstWave\WorkProject\Models\Brand
+defaultRedirect: firstwave/workproject/brands
+create:
+    redirect: 'firstwave/workproject/brands/update/:id'
+    redirectClose: firstwave/workproject/brands
+update:
+    redirect: firstwave/workproject/brands
+    redirectClose: firstwave/workproject/brands

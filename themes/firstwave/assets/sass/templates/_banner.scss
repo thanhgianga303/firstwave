@@ -1,0 +1,138 @@
+#banner{
+    position: relative;
+
+    .jumbotron {
+        &.main-banner{
+            padding: 400px 0 150px 0;
+            background-color: transparent;
+            color: #fff;
+
+            h1{
+                color: #fff;
+                font-size: 120px;
+                line-height: 120px;
+                font-weight: 800;
+            } 
+        
+            .lead{
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin: 2.5rem 0;
+            }
+        
+            .btn {
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 23px 29px;
+            
+                    i{
+                        margin-left:8px;
+                    }
+            
+                    &:hover{
+                        color: #5F25F4;
+                    }
+            }
+        }
+
+        &.x-caption{
+            padding: 0;
+            margin-top:347px;
+            margin-bottom: 30px;
+            background-color: transparent;
+            color: #fff;
+
+            h1{
+                margin:0;
+                padding:0;
+                color: #fff;
+                font-size: 64px;
+                line-height: 70.4px;
+                font-weight: 500;
+            } 
+        }
+
+        &.v-caption{
+            padding: 0;
+            margin-top:280px;
+            margin-bottom: 84px;
+            padding-bottom: 94px;
+            background-color: transparent;
+            color: #fff;
+
+            h1{
+                margin:0;
+                padding:0;
+                color: #fff;
+                font-size: 64px;
+                line-height: 70.4px;
+                font-weight: 500;
+            } 
+        }
+    }
+
+    .bg-x-banner{
+        position: absolute;
+        content:"";
+        right: 0;
+        bottom: 0;
+        width: 725px;
+        min-height: 650px;
+        background: url("/themes/firstwave/assets/images/bg/firstwave-x-banner.svg") no-repeat;
+        background-size: 100%;
+        background-position: right 100%; 
+        margin-bottom: -67px;
+    }
+
+    .bg-v-banner{
+        position: absolute;
+        content:"";
+        right: 97px;
+        bottom: 0;
+        width: 590px;
+        min-height: 655px;
+        background: url("/themes/firstwave/assets/images/bg/firstwave-venture-banner.png") no-repeat;
+        background-size: 100%;
+        background-position: 0% 0%; 
+        margin-bottom: -253px;
+    }
+}
+
+
+#work-banner{
+    .jumbotron {
+        padding: 280px 0 70px 0;
+        background-color: transparent;
+        color: #fff;
+    }
+
+   h1{
+        color: #fff;
+        font-size: 120px;
+        line-height: 120px;
+        font-weight: 800;
+   } 
+}
+
+#view-work-banner{
+    .jumbotron {
+        padding: 280px 0 40px 0;
+        background-color: transparent;
+        color: #fff;
+
+        h1{
+            color: #fff;
+            font-size: 70px;
+            line-height: 70px;
+            font-weight: 800;
+       }    
+    
+       .lead{
+           font-size: 18px;
+           font-weight: 700;
+           line-height: 23.31px;
+       }
+    }
+}

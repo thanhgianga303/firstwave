@@ -1,0 +1,50 @@
+title = "Test"
+url = "/test"
+is_hidden = 0
+==
+<!DOCTYPE html>
+<html>
+<head>
+  <title>slick lightbox</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- core CSS -->
+<link href="{{ [
+        'assets/vendor/slick-1.8.1/slick/slick-theme.css',
+        'assets/vendor/slick-lightbox/gh-pages/stylesheets/github-highlight.css',
+        'assets/vendor/slick-lightbox/gh-pages/bower_components/slick-carousel/slick/slick.css',
+        'assets/vendor/slick-lightbox/gh-pages/bower_components/slick-carousel/slick/slick-theme.css',
+        'assets/vendor/slick-lightbox/dist/slick-lightbox.css',
+    ]|theme }}" rel="stylesheet">
+
+</head>
+<body style="background:#fff !important">
+  <div>
+    <ul>
+      <li><a href="http://placekitten.com/1600/1300" data-caption="Lorem ipsum 1600x1300">http://placekitten.com/1600/1300</a></li>
+      <li><a href="http://placekitten.com/1630/1280" data-caption="Lorem ipsum 1630x1280">http://placekitten.com/1630/1280</a></li>
+      <li><a href="http://placekitten.com/1500/1250" data-caption="Lorem ipsum 1500x1250">http://placekitten.com/1500/1250</a></li>
+    </ul>
+  </div>
+  
+  <script src="{{ [
+    'assets/vendor/jquery/dist/jquery.js',
+    'assets/vendor/bootstrap-5.0.1/js/bootstrap.bundle.min.js',
+    'assets/vendor/slick-1.8.1/slick/slick.min.js',
+    'assets/vendor/slick-lightbox/dist/slick-lightbox.min.js',
+    'assets/vendor/counterup/jquery.counterup.min.js',
+    'assets/vendor/wow/dist/wow.min.js',
+    'assets/js/main.js',
+    '@framework',
+    '@framework.extras'
+]|theme }}"></script> 
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('ul').slickLightbox({
+        itemSelector: '> li > a'
+      });
+    });
+  </script>
+</body>
+</html>

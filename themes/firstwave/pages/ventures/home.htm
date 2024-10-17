@@ -1,0 +1,16 @@
+title = "First Wave - Ventures"
+url = "/ventures"
+layout = "default"
+is_hidden = 0
+==
+{##}
+{% partial "inc/nav" this_page='ventures'%}
+<div class="main fw-v" id="main">
+    {% partial "banner/ventures" %}
+    <div id="fwb-gradient">
+        {% partial "ventures/services" %}
+        {% partial "ventures/friends" %}
+        {% partial "ventures/our-works" %}
+    </div>
+    {% partial "widgets/contact" %}
+</div>

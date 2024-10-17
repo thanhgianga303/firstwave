@@ -1,0 +1,28 @@
+$light: #fff;
+$primary-color: #5F25F4;
+$secondary-color: #f5f8f9;
+$event-color: #c54041;
+$law-color: #b99769;
+$black: #242424;
+$border-color:#dedede;
+$primary-font:'Montserrat', sans-serif;
+$secondary-font:'Poppins', sans-serif;
+$extra-font:'Hind', serif;
+
+$primary:#5F25F4;
+$secondary-color:#f37321;
+
+
+// hex
+$hex-border-color:#5F25F4;
+$hex-inner-color:#000;
+$hex-icon-color:$light;
+
+$hex-width:112px;
+$hex-height:65px;
+
+$hex-pos:calc( 1px - (#{$hex-height} / 2));
+$hex-border-tb:calc(#{$hex-height} / 2);
+$hex-border-lr:calc(#{$hex-width} / 2);
+
+$icon-size:60px;

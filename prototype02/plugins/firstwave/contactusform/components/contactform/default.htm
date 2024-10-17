@@ -1,0 +1,34 @@
+<form   
+    class="contact-form-firstwave"
+    id="firstwaveContactForm"  
+    role="form"
+    data-request="{{ __SELF__ }}::onSubmitContactForm" 
+    data-request-validate 
+    data-request-flash>
+
+    {{ form_token() }}
+
+    {{ form_sessionKey() }}
+
+    <div class="row mb-3">
+        <div class="col form-group-holder">
+            <input type="text" name="firstname" placeholder="First name" class="rounded-0 form-control bg-light">
+            <span data-validate-for="firstname" class="form-alert-text"></span>
+        </div>
+        <div class="col form-group-holder">
+            <input type="text" name="lastname" placeholder="Last name" class="rounded-0 form-control bg-light">
+             <span data-validate-for="lastname" class="form-alert-text"></span>
+        </div>
+    </div>
+    <div class="form-group form-group-holder mb-3">
+        <input type="email" name="email" placeholder="Email" class="rounded-0 form-control bg-light">
+        <span data-validate-for="email" class="form-alert-text"></span>
+    </div>
+    <div class="form-group form-group-holder mb-3">
+        <textarea class="form-control rounded-0" name="content" placeholder="Your Message" id="exampleFormControlTextarea1" rows="7"></textarea>
+        <span data-validate-for="content" class="form-alert-text"></span>
+    </div>
+    <div class="form-check py-2 px-0">
+        <button type="submit" class="rounded-0 btn btn-main py-3 px-5" data-attach-loading>Send Message</button>
+    </div>
+</form>

@@ -1,0 +1,24 @@
+columns:
+    id:
+        label: 'No'
+        type: row_number
+        sortable: true
+        width: 5%
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    category:
+        label: Categories
+        relation: category
+        select: title
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: Date
+        type: datetime
+        searchable: true
+        sortable: true
+        width: 15%

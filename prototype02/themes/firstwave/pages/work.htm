@@ -1,0 +1,25 @@
+title = "Work"
+url = "/work"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    use FirstWave\WorkProject\Models\Category;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+         $this['categories'] = Category::orderBy('id', 'asc')->get();
+    }
+?>
+==
+
+{% partial "work/banner" %}
+{% partial "work/activation" %}
+{% partial "work/gamified" %}
+{% partial "work/vnh" %}
+{% partial "work/conference" %}
+{% partial "work/outdoor" %}
+{% partial "home/contact" %}

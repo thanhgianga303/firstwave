@@ -1,0 +1,24 @@
+1728239673a:1:{s:13:"work-view.htm";a:9:{s:8:"fileName";s:13:"work-view.htm";s:7:"content";s:362:"title = "Work"
+url = "/work/:slug"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+       $this['project'] = Work::where('slug', '=', $this->param('slug'))->first();
+    }
+?>
+==
+{% partial "view-work/banner" %}
+{% partial "view-work/info" %}
+{% partial "view-work/similar" %}
+{% partial "home/contact" %}";s:5:"mtime";i:1623395196;s:6:"markup";s:126:"{% partial "view-work/banner" %}
+{% partial "view-work/info" %}
+{% partial "view-work/similar" %}
+{% partial "home/contact" %}";s:4:"code";s:152:"use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+       $this['project'] = Work::where('slug', '=', $this->param('slug'))->first();
+    }";s:5:"title";s:4:"Work";s:3:"url";s:11:"/work/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

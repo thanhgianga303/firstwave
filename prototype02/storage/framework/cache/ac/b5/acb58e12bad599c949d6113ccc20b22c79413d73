@@ -1,0 +1,71 @@
+1728239673a:1:{s:14:"inc/footer.htm";a:5:{s:8:"fileName";s:14:"inc/footer.htm";s:7:"content";s:1511:"<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center py-4">
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.facebook.com/First-Wave-Agency-Singapore-100137285054193/">
+                        <img src="{{ 'assets/images/icons/fb-icon-white.svg'|theme }}" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="soc-divider">
+                        <span>&#47;</span>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/firstwave.sg/">
+                            <img src="{{ 'assets/images/icons/ig-logo-white.svg'|theme }}" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="soc-divider">
+                        <span>&#47;</span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/first-wave-agency/">
+                            <img src="{{ 'assets/images/icons/linkedin-icon-white.svg'|theme }}" alt="Linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center cc mt-3">&copy;  {{ "now"|date("Y") }} First Wave Pte Ltd.</p>
+            </div>
+        </div>
+    </div>
+</footer><!--/#footer-->";s:5:"mtime";i:1623395225;s:6:"markup";s:1511:"<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center py-4">
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.facebook.com/First-Wave-Agency-Singapore-100137285054193/">
+                        <img src="{{ 'assets/images/icons/fb-icon-white.svg'|theme }}" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="soc-divider">
+                        <span>&#47;</span>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/firstwave.sg/">
+                            <img src="{{ 'assets/images/icons/ig-logo-white.svg'|theme }}" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="soc-divider">
+                        <span>&#47;</span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/first-wave-agency/">
+                            <img src="{{ 'assets/images/icons/linkedin-icon-white.svg'|theme }}" alt="Linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center cc mt-3">&copy;  {{ "now"|date("Y") }} First Wave Pte Ltd.</p>
+            </div>
+        </div>
+    </div>
+</footer><!--/#footer-->";s:4:"code";N;}}

@@ -1,0 +1,19 @@
+==
+<section id="x-view-work-content" class="section-container fwx">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 wow fadeInLeft">
+                <div>
+                    <h1 class="content-title">{{ work.title }}</h1>
+                    <h3 class="content-sub-title">Tags: {{ work.event|striptags|raw}}</h3>
+                    <h3 class="content-sub-title">Year: {{ work.client }}</h3>
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight">
+                <div class="x-view-work-description">
+                    {{ work.description|raw}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

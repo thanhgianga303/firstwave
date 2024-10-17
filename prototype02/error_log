@@ -1,0 +1,9 @@
+[10-Jun-2021 20:27:14 America/Phoenix] PHP Warning:  shell_exec() has been disabled for security reasons in /home/firstwav/public_html/prototype02/mail_test.php on line 3436
+[10-Jun-2021 20:27:36 America/Phoenix] PHP Warning:  shell_exec() has been disabled for security reasons in /home/firstwav/public_html/prototype02/mail_test.php on line 3436
+[10-Jun-2021 20:34:17 America/Phoenix] PHP Warning:  shell_exec() has been disabled for security reasons in /home/firstwav/public_html/prototype02/mail_test.php on line 3436
+[10-Jun-2021 23:07:07 America/Phoenix] PHP Warning:  shell_exec() has been disabled for security reasons in /home/firstwav/public_html/prototype02/mail_test.php on line 3436
+[10-Jun-2021 23:07:14 America/Phoenix] PHP Warning:  shell_exec() has been disabled for security reasons in /home/firstwav/public_html/prototype02/mail_test.php on line 3436
+[10-Jun-2021 23:07:32 America/Phoenix] PHP Warning:  shell_exec() has been disabled for security reasons in /home/firstwav/public_html/prototype02/mail_test.php on line 3436
+[10-Jun-2021 23:07:58 America/Phoenix] PHP Warning:  shell_exec() has been disabled for security reasons in /home/firstwav/public_html/prototype02/mail_test.php on line 3436
+[16-Apr-2024 17:36:24 Asia/Singapore] PHP Parse error:  syntax error, unexpected ':', expecting '{' in /home/firstwav/public_html/prototype02/vendor/october/rain/src/Support/helpers.php on line 301
+[16-Apr-2024 21:06:59 Asia/Singapore] PHP Parse error:  syntax error, unexpected ':', expecting '{' in /home/firstwav/public_html/prototype02/vendor/october/rain/src/Support/helpers.php on line 301

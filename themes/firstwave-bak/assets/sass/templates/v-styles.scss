@@ -1,0 +1,125 @@
+#fwb-gradient{
+    background: linear-gradient($v-dark, $v-primary, $v-dark);
+}
+
+#services{
+    &.fwv{
+        padding-top:280px;
+        padding-bottom:120px;
+
+        .media{
+
+            .media-body{
+                .media-heading{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 44px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+
+                .media-description{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+#partners{
+    &.fwv{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+#our-work{
+    &.fwv{
+        padding-bottom:350px;
+        background-image: url(/themes/firstwave/assets/images/dotss.png);
+        width: 100%;
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        .our-works-list{
+            list-style: none;
+            margin:0;
+            padding:0;
+
+            li{
+                font-size: 45px;
+                line-height: 49.5px;
+                font-weight: 500;
+                display: inline-block;
+                padding-right:5px;
+            }
+        }
+    }
+}
+
+#the-founders{
+    &.fwv{
+        padding-top: 270px;
+        padding-bottom: 150px;
+
+        .founder-description-holder{
+            .description{
+                color:#fff;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 53px;
+            }
+        }
+    }
+}
+
+#profile{
+    &.fwv{
+        padding-top:30px;
+        padding-bottom: 50px;
+
+        .profile-wrapper{
+            .profile-name{
+                color:#fff;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 44px;
+            }
+
+            .profile-title{
+                color:#fff;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 26px;
+            }
+
+            .profile-description-wrapper{
+                ul{
+                    padding :0 25px;
+                    margin-top:25px;
+
+                    li{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    &:last-child{
+        padding-bottom: 350px !important;
+    }
+}

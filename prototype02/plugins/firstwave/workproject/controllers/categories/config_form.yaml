@@ -1,0 +1,10 @@
+name: Categories
+form: $/firstwave/workproject/models/category/fields.yaml
+modelClass: FirstWave\WorkProject\Models\Category
+defaultRedirect: firstwave/workproject/categories
+create:
+    redirect: 'firstwave/workproject/categories/update/:id'
+    redirectClose: firstwave/workproject/categories
+update:
+    redirect: firstwave/workproject/categories
+    redirectClose: firstwave/workproject/categories

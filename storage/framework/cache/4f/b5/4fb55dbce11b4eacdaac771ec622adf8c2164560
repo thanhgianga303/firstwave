@@ -1,0 +1,44 @@
+1728326469a:1:{s:18:"firstwave/work.htm";a:9:{s:8:"fileName";s:18:"firstwave/work.htm";s:7:"content";s:897:"title = "First Wave Agency SG"
+url = "/firstwave/work"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['works'] = Work::where('status', true)->get();
+    }
+?>
+==
+{% partial "inc/nav" this_page='firstwave'%}
+<div class="main" id="main">
+    {% partial "main-work/banner" %}
+    {% partial "main-work/gallery" TITLE='Activation, Engagement & Media Tech' CAT_ID=1 %}
+    {% partial "main-work/gallery" TITLE='Gamified Engagement' CAT_ID=2 %}
+    {% partial "main-work/gallery" TITLE='Virtual & Hybrid Projects' CAT_ID=3 %}
+    {% partial "main-work/gallery" TITLE='Conferences & Corporate Events' CAT_ID=4 %}
+    {% partial "main-work/gallery" TITLE='Outdoor Events & Festivals' CAT_ID=5 %}
+    {% partial "widgets/contact" %}
+</div>";s:5:"mtime";i:1728245705;s:6:"markup";s:577:"{% partial "inc/nav" this_page='firstwave'%}
+<div class="main" id="main">
+    {% partial "main-work/banner" %}
+    {% partial "main-work/gallery" TITLE='Activation, Engagement & Media Tech' CAT_ID=1 %}
+    {% partial "main-work/gallery" TITLE='Gamified Engagement' CAT_ID=2 %}
+    {% partial "main-work/gallery" TITLE='Virtual & Hybrid Projects' CAT_ID=3 %}
+    {% partial "main-work/gallery" TITLE='Conferences & Corporate Events' CAT_ID=4 %}
+    {% partial "main-work/gallery" TITLE='Outdoor Events & Festivals' CAT_ID=5 %}
+    {% partial "widgets/contact" %}
+</div>";s:4:"code";s:207:"    use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['works'] = Work::where('status', true)->get();
+    }";s:5:"title";s:20:"First Wave Agency SG";s:3:"url";s:15:"/firstwave/work";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

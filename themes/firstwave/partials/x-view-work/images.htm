@@ -1,0 +1,15 @@
+==
+{##}
+<section id="view-work-banner" class="fwx" >
+    <div class="container">
+        <div class="jumbotron x-gallery">
+            {% if work.work_gallery.count > 0 %}
+                {% for key, image in work.work_gallery %}
+                <div>
+                   <img src="{{ image.path }}" class="w-100" alt="{{ work.title}}">
+                </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,27 @@
+title = "First Wave Agency SG"
+url = "/firstwave/work"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['works'] = Work::where('status', true)->get();
+    }
+?>
+==
+{% partial "inc/nav" this_page='firstwave'%}
+<div class="main" id="main">
+    {% partial "main-work/banner" %}
+    {% partial "main-work/gallery" TITLE='Activation, Engagement & Media Tech' CAT_ID=1 %}
+    {% partial "main-work/gallery" TITLE='Gamified Engagement' CAT_ID=2 %}
+    {% partial "main-work/gallery" TITLE='Virtual & Hybrid Projects' CAT_ID=3 %}
+    {% partial "main-work/gallery" TITLE='Conferences & Corporate Events' CAT_ID=4 %}
+    {% partial "main-work/gallery" TITLE='Outdoor Events & Festivals' CAT_ID=5 %}
+    {% partial "widgets/contact" %}
+</div>

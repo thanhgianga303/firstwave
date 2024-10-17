@@ -1,0 +1,51 @@
+#footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+  
+    a {
+        color: #fff;
+  
+        &:hover{
+          color: $white;
+        }
+    }
+  
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0 -7.5px;
+  
+      & > li{
+          display: inline-block;
+          margin: 0 15px;
+  
+          i{
+            font-size: 3rem;
+          }
+
+          &.soc-divider{
+            span{
+              color:$major_color;
+              line-height: 75px;
+              font-size: 30px;
+              font-weight:300;
+              vertical-align: middle;
+            }
+          }
+        }
+    }
+  
+    p{
+      &.cc{
+        font-weight: 500;
+          font-size: 18px;
+          font-weight: 500;
+          color:#898995;
+      }
+
+      a{
+        color:#898995;
+      }
+    }
+}

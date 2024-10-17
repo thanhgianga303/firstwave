@@ -1,0 +1,50 @@
+1728201692a:1:{s:19:"work/conference.htm";a:5:{s:8:"fileName";s:19:"work/conference.htm";s:7:"content";s:1387:"<section id="works-section" class="pt-lg-4 pt-2 pb-2 section-container bg-darker">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-left text-white wow fadeInDown">Conferences & Corporate Events</h2>
+        </div>
+        <div class="row works-slider slick-slider">
+            {% for category in categories if category.id == '4'%}
+                {% for work in category.work if work.status %}
+                    <div class="col-4 work-item">
+                        <a href="{{ 'work-view'|page({ slug: work.slug }) }}">
+                            <div class="work-holder">
+                                {% if work.work_cover %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/monopoly-fw.png'|theme }});"></div>
+                                {% else %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/no-cover.png'|theme }});"></div>
+                                {% endif %}
+                                <div class="work-overlay"><h6 class="overlay-text">{{ work.title }}</h6></div>
+                            </div>
+                        </a>
+                    </div>                    
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+";s:5:"mtime";i:1623395229;s:6:"markup";s:1386:"<section id="works-section" class="pt-lg-4 pt-2 pb-2 section-container bg-darker">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-left text-white wow fadeInDown">Conferences & Corporate Events</h2>
+        </div>
+        <div class="row works-slider slick-slider">
+            {% for category in categories if category.id == '4'%}
+                {% for work in category.work if work.status %}
+                    <div class="col-4 work-item">
+                        <a href="{{ 'work-view'|page({ slug: work.slug }) }}">
+                            <div class="work-holder">
+                                {% if work.work_cover %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/monopoly-fw.png'|theme }});"></div>
+                                {% else %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/no-cover.png'|theme }});"></div>
+                                {% endif %}
+                                <div class="work-overlay"><h6 class="overlay-text">{{ work.title }}</h6></div>
+                            </div>
+                        </a>
+                    </div>                    
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>";s:4:"code";N;}}

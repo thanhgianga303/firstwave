@@ -1,0 +1,80 @@
+#staticBackdrop{
+    background-color : $dark !important;
+    background-image: url(/themes/firstwave/assets/images/dotss.png);
+    width: 100%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .modal-dialog{
+        max-width: 900px !important;
+
+        .menu-footer{
+            position: absolute;
+            width: 100%;            
+            bottom: 0;
+
+        }   
+    }
+
+    .modal-content{
+        background-color: transparent;
+
+        .card-group{
+            .card{
+                background: transparent;
+                border:1px solid transparent;
+                cursor : pointer;
+
+                &:hover{
+                    border:1px solid #dedede;
+                    border-radius:25px;
+                }
+
+                .card-url{
+                    top:0;
+                    bottom: 0;
+                    left:0;
+                    right:0;
+                    position: absolute;
+                    font-size: 0;                    
+                    &:after{
+                        content:"";
+                    }
+                }
+
+                .menu-img-holder{
+                    &.fw-tab1{
+                        .menu-img{
+                            img{
+                                height: 105px;
+                            }
+                        }
+                    }
+                    
+                    &.fw-tab2{
+                        .menu-img{
+                            img{
+                                height: 105px;
+                                padding-top:15px;
+                                padding-bottom:15px;
+                            }
+                        } 
+                    }
+
+                    &.fw-tab3{
+                        .menu-img{
+                            img{
+                                height: 105px;
+                                padding-top:15px;
+                                padding-bottom:15px;
+                            }
+                        }
+                    }
+
+                }
+                
+            }
+        }
+    }
+}

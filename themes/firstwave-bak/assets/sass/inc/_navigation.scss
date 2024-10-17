@@ -1,0 +1,168 @@
+.navbar{
+    &.scrolled{
+      background: #000;
+    }
+
+  .navbar-toggler{
+      border:0;
+      border-radius: 0;
+      height: 60px;
+      width: 60px;
+      background-color: transparent;
+      float:left;
+      font-size: 11.5px;
+      font-size: .71875rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding-top:9px;
+      outline: 0;
+      box-shadow: none;
+      
+      .icon-bar{
+          background-color: $light;
+          display: block;
+          width: 100%;
+          height: 2.5px;
+          margin-bottom: 5.5px;
+          position: relative;
+          transition: all 300ms ease-in-out;
+      }
+
+      &.active{
+          .icon-bar:nth-of-type(1){
+              top: 9px;
+              transform: rotate(45deg);
+          }
+          .icon-bar:nth-of-type(2){
+              background-color: transparent;
+          }
+          .icon-bar:nth-of-type(3){
+              top: -6px;
+              transform: rotate(-45deg);
+          }
+      }
+
+      &:focus { outline:0 !important; box-shadow: none; }
+      &:active { outline:0 !important;  box-shadow: none;}
+  }
+
+
+  .navbar-nav{
+
+    .nav-item{
+
+      .nav-link {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 1.5rem;
+        border-bottom: 3px solid transparent;
+
+        &:hover{
+          border-bottom: 3px solid #fff;
+        }
+      }
+
+      &:last-child{
+        .nav-link {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  &.navbar-default {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+
+    .navbar-toggle {
+      margin-top: 32px;
+    }
+
+    .navbar-brand {
+      height: auto;
+    }
+  }
+
+}
+
+.dropdown{
+  z-index: 999;
+  
+  .menu-grid{
+    margin-right: 15px;
+    margin-bottom: -1px;
+  }
+
+  .dropdown-menu{
+    background: rgba(11, 11, 11, 0.3);
+    mix-blend-mode: multiply;
+    border-radius: 22px;
+    padding:15px;
+
+    .dropdown-item{
+      color: #fff;
+      border-radius:5px;
+      padding:8px 8px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      vertical-align: middle;
+
+      span{
+        display: inline-block;
+      }
+
+      &:hover{
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .item-fw-logo{
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+
+        &.fw-icon-m{
+          background-image: url("/themes/firstwave/assets/images/fw-logo-svg.svg");
+          width: 35px;
+          height:40px;
+          margin:0 2.5px;
+        }
+        &.fw-icon-x{
+          background-image: url("/themes/firstwave/assets/images/fw-x-svg.svg");
+          width: 40px;
+          height:30px;
+          margin:5px 0;
+        }
+        &.fw-icon-v{
+          background-image: url("/themes/firstwave/assets/images/fw-v-svg.svg");
+          width: 40px;
+          height:40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 1.5rem;
+    border-bottom: 3px solid transparent;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 3px solid transparent;
+  }
+
+  .navbar .navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 1.5rem !important;
+  }
+}

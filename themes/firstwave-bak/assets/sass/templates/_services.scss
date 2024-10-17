@@ -1,0 +1,71 @@
+#services{
+    .service-box {
+        .media-body{
+            .hex-icon{
+
+                &.coat{
+                    margin-top: 66px;
+                    margin-bottom: 66px;
+                    margin-left: auto;
+                    margin-right: auto;     
+                }
+
+                width: 111px;
+                height: 66px;
+                background: $hex-border-color;
+                position: relative;
+
+
+                &:before{
+                    content: "";
+                    border-left: $hex-border-lr solid transparent;
+                    border-right: $hex-border-lr solid transparent;
+                    position: absolute;
+                    top: $hex-pos;
+                    border-bottom: $hex-border-tb solid $hex-border-color;
+                    transition: background-color 400ms, background-color 400ms; 
+                }
+
+                &:after{
+                    content: "";
+                    border-left: $hex-border-lr solid transparent;
+                    border-right: $hex-border-lr solid transparent;
+                    position: absolute;
+                    bottom: $hex-pos;
+                    border-top: $hex-border-tb solid $hex-border-color;
+                    transition: background-color 400ms, background-color 400ms;
+                }
+
+                &.hex-inner{
+                    background-color: $hex-inner-color;
+                    transform: scale(0.95, 0.95);
+                    z-index: 1;
+
+                    &:after{
+                        border-top: $hex-border-tb solid $hex-inner-color;
+                    }
+
+                    &:before{
+                        border-bottom: $hex-border-tb solid $hex-inner-color;
+                    }
+                }
+
+                .hex-symbol{
+                    color: $hex-icon-color;
+                    font-size: 60px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .media-heading {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 23px;
+                text-align: center;
+            }
+        }
+    }
+}

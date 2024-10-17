@@ -1,0 +1,47 @@
+==
+<section id="work-info" class="bg-darker">
+    <div class="container">
+        <div class="row">
+        {% if not project.client %}
+        <div class="col-lg-12 wow fadeInRight pt-50 pb-50">
+           <div class="info-desc">{{ project.description|raw }}</div>
+        </div>
+        {% else %}
+        <div class="col-lg-5 wow fadeInLeft py-3 py-lg-5">
+            <div class="divider">
+                <h3 class="text-white">Client</h3>
+                <p class="info-sub">{{ project.client }}</p>
+            </div>
+            <div class="divider">
+                <h3 class="text-white">Event</h3>
+                <div class="info-sub"> {{ project.event|raw }} </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7 wow fadeInRight py-3 py-lg-5">
+             <h3 class="text-white">Deliverables</h3>
+            <div class="info-desc">{{ project.description|raw }}</div>
+        </div>
+
+        {% endif %}
+        </div>
+    </div>
+</section>
+
+{% if project.work_gallery.count > 0 %}
+
+<section id="work-gallery-box" class="bg-darker">
+    <div class="container">
+        <div class="row work-gallery" id="work-gallery">
+            {% for key, image in project.work_gallery %}
+            <div class="col-lg-4 gallery-item wow fadeInLeft">
+                <a href="{{ image.thumb(auto,550) }}"  data-caption="{{ key+1 }} / {{ project.work_gallery.count }}" target="_blank" class="thumbnail">
+                    <div class="gallery-thumb-image"  style="background:url({{ image.thumb(auto,450) }});"></div>
+                </a>
+                <div class="image-counter"> {{ key+1 }} / {{ project.work_gallery.count }} </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

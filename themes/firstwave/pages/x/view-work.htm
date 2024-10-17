@@ -1,0 +1,24 @@
+title = "First Wave - X View Work"
+url = "/x/work/:slug"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+        $this['this_work'] = $this->param('slug');
+        $this['work'] = Work::where('slug', '=', $this->param('slug'))->first();
+    }
+?>
+==
+{##}
+{% partial "inc/nav" this_page='x'%}
+{% if work %}
+<div class="main" id="main">
+    {% partial "x-view-work/banner" %}
+    {% partial "x-view-work/content" %}
+    {% partial "x-view-work/images" %}
+    {% partial "x-view-work/more" %}
+</div>
+{% endif %}

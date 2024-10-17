@@ -1,0 +1,37 @@
+==
+<section id="works-section" class="pt-100 pb-2 section-container bg-darker {{ CAT_ID == 5 ? 'pb-100' : '' }}">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title text-left text-white wow fadeInDown">{{ TITLE }}</h2>
+        </div>
+        <div class="row works-slider slick-slider">
+        {% for work in works %}
+            {% for brand in work.brand if brand.id == '1'%}
+                {% for category in work.category if category.id == CAT_ID %}
+                <div class="col-4 work-item">
+                    <a href="{{ 'firstwave/view-work'|page({ slug: work.slug }) }}">
+                        <div class="work-holder">
+                            {% if work.work_cover %}
+                                <div class="proj-prev-img" style="background:url({{ work.work_cover.thumb(auto,450) }});"></div>
+                            {% else %}
+                                <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/no-cover.png'|theme }});"></div>
+                            {% endif %}
+                            <div class="work-overlay"><h6 class="overlay-text">{{ work.title }}</h6></div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+        </div>
+        {% if CAT_ID == 5 %}
+        <div class="row">
+            <div class="col-12 pt-5">
+                <a type="button" href="{{ 'assets/files/FirstWaveCorpDeck2022.pdf'|theme }}" download="firstwave-portfolio.pdf" target="_blank" class="rounded-0 btn btn-main py-3 px-4" data="" id="pdfDownload">
+                    Download Portfolio (PDF) <i class="fa fa-download px-2"></i> 
+                </a>
+            </div>                    
+        </div>
+        {% endif %}
+    </div>
+</section>

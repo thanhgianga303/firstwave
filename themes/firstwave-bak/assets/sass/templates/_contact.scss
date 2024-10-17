@@ -1,0 +1,27 @@
+#get-in-touch {
+    padding: 100px 0 50px;
+    color: #fff;
+
+    &.bg-x{
+        padding: 56px 0 216px;
+        background: url("/themes/firstwave/assets/images/dotss-x.png") no-repeat;
+        background-size: 100%;
+        background-position: 80% 100%; 
+    }
+
+    .lets-connect {
+        font-size: 70px;
+        font-weight: 800;
+        line-height: 65.65px;
+    }
+
+    h1,h2 {
+        color: #fff;
+    }
+
+    .contact-form{
+        input,textarea{
+            border:none;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+description = "Default layout"
+[contactform]
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% partial "inc/meta" %}
+    {% partial "inc/styles" %}
+</head>
+<body>
+    <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    {% page %}
+    {% partial "inc/footer" %}
+    {% partial "inc/scripts" %}
+</body>
+</html>

@@ -1,0 +1,52 @@
+tabs:
+  fields:
+
+    ####################################################
+    # Tab: 1.0 General Settings
+    ####################################################
+    
+    theme_info_section:
+      tab: "General"
+      label: "Info"
+      type: section
+      comment: "General Informations"
+      cssClass: "p-a m-y control-scrollpanel"
+
+    theme_site_name:
+      tab: "General"
+      label: "Website Name"
+      type: text
+      default: "First Wave Pte Ltd."
+    
+    email:
+      label: "Email Address"
+      span: auto
+      default: ""
+
+    phone:
+        label: "Call Us"
+        span: auto
+        default: " "
+
+    facebook_url:
+        label: "Facebook"
+        span: auto
+        default: "https://www.facebook.com/"
+
+    twitter_url:
+        label: "Twitter"
+        span: auto
+        default: "https://www.twitter.com/"
+
+    instagram_url:
+        label: "Instagram"
+        span: auto
+        default: "https://www.instagram.com/"
+
+    github_url:
+        label: "Github"
+        span: auto
+        default: "https://github.com/"
+
+
+      

@@ -1,0 +1,71 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        placeholder: 'Project title'
+        type: text
+    slug:
+        label: slug
+        span: auto
+        placeholder: project-slug
+        preset:
+            field: title
+            type: slug
+        type: text
+tabs:
+    fields:
+        description:
+            label: Description
+            size: large
+            span: full
+            type: textarea
+            tab: Content
+        category:
+            label: Category
+            nameFrom: title
+            descriptionFrom: description
+            span: full
+            type: relation
+            tab: Category
+        status:
+            label: Published
+            span: auto
+            default: 1
+            type: checkbox
+            tab: Config
+        client:
+            label: 'Client Name'
+            span: auto
+            placeholder: 'Client Name'
+            type: text
+            tab: Config
+        work_cover:
+            label: 'Cover Image'
+            mode: image
+            imageWidth: '250'
+            imageHeight: '250'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            comment: '( Pls set specific dimension )'
+            tab: Config
+        event:
+            label: Event
+            span: auto
+            type: text
+            tab: Config
+        work_gallery:
+            label: 'Project Gallery'
+            mode: image
+            imageWidth: '150'
+            imageHeight: '90'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: right
+            type: fileupload
+            tab: Config

@@ -1,0 +1,55 @@
+#footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $light;
+
+  a{
+    color: $light;
+
+    &:hover{
+      color: $light;
+      text-decoration: underline;
+    }
+  }
+
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 -7.5px;
+
+    li{
+      display: inline-block;
+      margin: 0 15px;
+
+        i{
+          font-size: 3rem;
+        }
+
+        &.soc-divider span {
+          color: $primary-color;
+          line-height: 75px;
+          font-size: 30px;
+          font-weight: 300;
+          vertical-align: middle;
+        }
+
+        img{
+          height: 50px !important;
+      }
+    }
+  }
+
+  p{
+    &.cc{
+      font-weight: 500;
+      font-size: 18px;
+      font-weight: 500;
+      color: #898995;
+    }
+
+    a{
+      color: #898995;
+    }
+  }
+}

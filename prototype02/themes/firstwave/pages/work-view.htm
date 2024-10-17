@@ -1,0 +1,17 @@
+title = "Work"
+url = "/work/:slug"
+layout = "default"
+is_hidden = 0
+==
+<?php
+use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+       $this['project'] = Work::where('slug', '=', $this->param('slug'))->first();
+    }
+?>
+==
+{% partial "view-work/banner" %}
+{% partial "view-work/info" %}
+{% partial "view-work/similar" %}
+{% partial "home/contact" %}

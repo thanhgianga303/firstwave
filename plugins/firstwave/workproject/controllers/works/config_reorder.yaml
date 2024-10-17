@@ -1,0 +1,4 @@
+title: Works
+modelClass: FirstWave\WorkProject\Models\Work
+toolbar:
+    buttons: reorder_toolbar

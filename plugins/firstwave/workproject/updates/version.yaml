@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table firstwave_workproject_works'
+    - builder_table_create_firstwave_workproject_works.php
+1.0.3:
+    - 'Created table firstwave_workproject_categories'
+    - builder_table_create_firstwave_workproject_categories.php
+1.0.4:
+    - 'Created table firstwave_workproject_works_to_cat'
+    - builder_table_create_firstwave_workproject_works_to_cat.php
+1.0.5:
+    - 'Updated table firstwave_workproject_works_to_cat'
+    - builder_table_update_firstwave_workproject_works_to_cat.php
+1.0.6:
+    - 'Updated table firstwave_workproject_works'
+    - builder_table_update_firstwave_workproject_works.php
+1.0.7:
+    - 'Created table firstwave_workproject_brands'
+    - builder_table_create_firstwave_workproject_brands.php
+1.0.8:
+    - 'Created table firstwave_workproject_works_to_brands'
+    - builder_table_create_firstwave_workproject_works_to_brands.php
+1.0.9:
+    - 'Updated table firstwave_workproject_works_to_brands'
+    - builder_table_update_firstwave_workproject_works_to_brands.php

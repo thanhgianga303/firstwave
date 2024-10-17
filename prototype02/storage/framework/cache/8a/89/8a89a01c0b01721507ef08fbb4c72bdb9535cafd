@@ -1,0 +1,53 @@
+1728239673a:1:{s:11:"inc/nav.htm";a:5:{s:8:"fileName";s:11:"inc/nav.htm";s:7:"content";s:1109:"<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand py-3" href="{{ 'home'|page }}">
+            <img src="{{ 'assets/images/firstwave-logo-white.svg'|theme }}" height="50px" alt="logo">
+        </a>
+
+        <button class="navbar-toggler" id="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbar-menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item scroll">
+                    <a href="{{ 'home'|page }}" class="nav-link">About</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'work'|page }}" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="#get-in-touch" class="nav-link">Connect</a>
+                </li>   
+            </ul>
+        </div>
+    </div>
+</nav>";s:5:"mtime";i:1623395225;s:6:"markup";s:1109:"<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand py-3" href="{{ 'home'|page }}">
+            <img src="{{ 'assets/images/firstwave-logo-white.svg'|theme }}" height="50px" alt="logo">
+        </a>
+
+        <button class="navbar-toggler" id="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbar-menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item scroll">
+                    <a href="{{ 'home'|page }}" class="nav-link">About</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'work'|page }}" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="#get-in-touch" class="nav-link">Connect</a>
+                </li>   
+            </ul>
+        </div>
+    </div>
+</nav>";s:4:"code";N;}}

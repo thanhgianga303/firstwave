@@ -1,0 +1,24 @@
+title = "First Wave - X Work"
+url = "/x/work"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['works'] = Work::where('status', true)->get();
+    }
+?>
+==
+{##}
+{% partial "inc/nav" this_page='x'%}
+<div class="main" id="main">
+    {% partial "x/work-banner" %}
+    {% partial "x/work-decks" %}
+    {% partial "widgets/contact-x" %}
+</div>

@@ -1,0 +1,24 @@
+plugin:
+    name: 'firstwave.workproject::lang.plugin.name'
+    description: 'firstwave.workproject::lang.plugin.description'
+    author: 'First Wave SG'
+    icon: oc-icon-files-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Works
+        url: firstwave/workproject/works
+        icon: icon-file-text
+        sideMenu:
+            side-menu-item2:
+                label: 'Work List'
+                url: firstwave/workproject/works
+                icon: icon-list
+            side-menu-item:
+                label: Category
+                url: firstwave/workproject/categories
+                icon: icon-tag
+            side-menu-item3:
+                label: Brand
+                url: firstwave/workproject/brands
+                icon: icon-tag

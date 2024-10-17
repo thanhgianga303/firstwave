@@ -1,0 +1,123 @@
+1728239673a:1:{s:17:"home/services.htm";a:5:{s:8:"fileName";s:17:"home/services.htm";s:7:"content";s:3203:"<section id="services" class="section-container">
+    <div class="container">
+        <div class="section-header wow fadeInDown" data-wow-delay="0.6s">
+            <h2 class="section-title text-left text-white">Why Us</h2>
+        </div>
+        <div class="row features">
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                                 <img src="{{ 'assets/images/icons/icon-experience.svg'|theme }}" class="hex-symbol" height="55px" alt="14 year of Experience">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">14 years of<br/> experience</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                               <img src="{{ 'assets/images/icons/icon-award-winning.svg'|theme }}" class="hex-symbol" height="55px" alt="Award Winning Agency">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">Award Winning<br/> Agency</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+
+            <div class="col-lg-3 col-md-6 col-sm-6  wow fadeInUp" data-wow-delay="0.6s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                                <img src="{{ 'assets/images/icons/icon-media-tech.svg'|theme }}" class="hex-symbol" height="55px" alt="Activation, Engagement, Media Tech">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">Activation<br/> Engagement<br/>  Media Tech</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.9s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                                <img src="{{ 'assets/images/icons/icon-offline-activation.svg'|theme }}" class="hex-symbol" height="55px" alt="Offline, Virtual & Hybrid Activations">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">Offline, Virtual &<br/>Hybrid Activations</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+    
+        </div><!--/.row-->    
+    </div>
+</section>";s:5:"mtime";i:1623395223;s:6:"markup";s:3203:"<section id="services" class="section-container">
+    <div class="container">
+        <div class="section-header wow fadeInDown" data-wow-delay="0.6s">
+            <h2 class="section-title text-left text-white">Why Us</h2>
+        </div>
+        <div class="row features">
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                                 <img src="{{ 'assets/images/icons/icon-experience.svg'|theme }}" class="hex-symbol" height="55px" alt="14 year of Experience">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">14 years of<br/> experience</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                               <img src="{{ 'assets/images/icons/icon-award-winning.svg'|theme }}" class="hex-symbol" height="55px" alt="Award Winning Agency">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">Award Winning<br/> Agency</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+
+            <div class="col-lg-3 col-md-6 col-sm-6  wow fadeInUp" data-wow-delay="0.6s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                                <img src="{{ 'assets/images/icons/icon-media-tech.svg'|theme }}" class="hex-symbol" height="55px" alt="Activation, Engagement, Media Tech">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">Activation<br/> Engagement<br/>  Media Tech</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.9s">
+                <div class="media service-box">
+                    <div class="media-body">
+                        <div class="hex-icon coat">
+                            <div class="hex-icon hex-inner">
+                                <img src="{{ 'assets/images/icons/icon-offline-activation.svg'|theme }}" class="hex-symbol" height="55px" alt="Offline, Virtual & Hybrid Activations">
+                            </div>
+                        </div>
+                        <h4 class="media-heading text-white">Offline, Virtual &<br/>Hybrid Activations</h4>
+                    </div>
+                </div>
+            </div><!--/.col-md-4-->
+    
+        </div><!--/.row-->    
+    </div>
+</section>";s:4:"code";N;}}

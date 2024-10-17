@@ -1,0 +1,49 @@
+1728239673a:1:{s:14:"inc/styles.htm";a:5:{s:8:"fileName";s:14:"inc/styles.htm";s:7:"content";s:745:"<!-- core CSS -->
+
+<link href="{{ [
+    'assets/vendor/bootstrap-5.0.1/css/bootstrap.min.css',
+    'assets/vendor/animate.css/animate.min.css',
+    'assets/vendor/slick-1.8.1/slick/slick.css',
+    'assets/vendor/slick-1.8.1/slick/slick-theme.css',
+]|theme }}" rel="stylesheet">
+
+<link href="{{'assets/vendor/slick-lightbox/dist/slick-lightbox.css'|theme }}" rel="stylesheet">
+
+<link href="{{ [
+  'assets/vendor/fontawesome/css/all.css',
+  'assets/dist/css/app.css',
+  '@framework.extras'
+]|theme }}" rel="stylesheet">
+
+{% styles %}
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->       
+
+<link rel="shortcut icon" href="{{ 'assets/images/ico/favicon.ico'|theme }}">";s:5:"mtime";i:1623395225;s:6:"markup";s:745:"<!-- core CSS -->
+
+<link href="{{ [
+    'assets/vendor/bootstrap-5.0.1/css/bootstrap.min.css',
+    'assets/vendor/animate.css/animate.min.css',
+    'assets/vendor/slick-1.8.1/slick/slick.css',
+    'assets/vendor/slick-1.8.1/slick/slick-theme.css',
+]|theme }}" rel="stylesheet">
+
+<link href="{{'assets/vendor/slick-lightbox/dist/slick-lightbox.css'|theme }}" rel="stylesheet">
+
+<link href="{{ [
+  'assets/vendor/fontawesome/css/all.css',
+  'assets/dist/css/app.css',
+  '@framework.extras'
+]|theme }}" rel="stylesheet">
+
+{% styles %}
+
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->       
+
+<link rel="shortcut icon" href="{{ 'assets/images/ico/favicon.ico'|theme }}">";s:4:"code";N;}}

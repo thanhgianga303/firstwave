@@ -1,0 +1,6 @@
+plugin:
+    name: 'firstwave.contactusform::lang.plugin.name'
+    description: 'firstwave.contactusform::lang.plugin.description'
+    author: 'First Wave SG'
+    icon: oc-icon-envelope
+    homepage: ''

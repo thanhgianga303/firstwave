@@ -1,0 +1,57 @@
+1728201693a:1:{s:21:"view-work/similar.htm";a:5:{s:8:"fileName";s:21:"view-work/similar.htm";s:7:"content";s:1496:"<section id="works-section" class="pt-lg-4 pt-2 pb-50 section-container bg-darker">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="float-start section-title text-left text-white wow fadeInDown">Similar projects</h2>
+
+            <a href="" class="float-end">View All Works</a>
+        </div>
+        <div class="row works-slider slick-slider">
+            {% for category in project.category  %}
+                {% for work in category.work if work.status %}
+                    {% if work.id  != project.id %}
+                    <div class="col-4 work-item">
+                        <a href="{{ 'work-view'|page({ slug: work.slug }) }}">
+                            <div class="work-holder">
+                                {% if work.work_cover %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/monopoly-fw.png'|theme }});"></div>
+                                {% else %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/no-cover.png'|theme }});"></div>
+                                {% endif %}
+                                <div class="work-overlay"><h6 class="overlay-text">{{ work.title }}</h6></div>
+                            </div>
+                        </a>
+                    </div> 
+                    {% endif%}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1623395227;s:6:"markup";s:1496:"<section id="works-section" class="pt-lg-4 pt-2 pb-50 section-container bg-darker">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="float-start section-title text-left text-white wow fadeInDown">Similar projects</h2>
+
+            <a href="" class="float-end">View All Works</a>
+        </div>
+        <div class="row works-slider slick-slider">
+            {% for category in project.category  %}
+                {% for work in category.work if work.status %}
+                    {% if work.id  != project.id %}
+                    <div class="col-4 work-item">
+                        <a href="{{ 'work-view'|page({ slug: work.slug }) }}">
+                            <div class="work-holder">
+                                {% if work.work_cover %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/monopoly-fw.png'|theme }});"></div>
+                                {% else %}
+                                    <div class="proj-prev-img" style="background:url({{ 'assets/images/projects/no-cover.png'|theme }});"></div>
+                                {% endif %}
+                                <div class="work-overlay"><h6 class="overlay-text">{{ work.title }}</h6></div>
+                            </div>
+                        </a>
+                    </div> 
+                    {% endif%}
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</section>";s:4:"code";N;}}

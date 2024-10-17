@@ -1,0 +1,21 @@
+description = "Default layout"
+[contactform]
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% partial "inc/meta" %}
+{% partial "inc/styles" %}
+</head>
+<body>
+{% partial "inc/nav" %}
+
+<div class="main" id="main">
+{% page %}
+</div>
+
+{% partial "inc/footer" %}
+
+{% partial "inc/scripts" %}
+</body>
+</html>

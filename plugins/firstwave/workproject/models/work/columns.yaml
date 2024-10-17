@@ -1,0 +1,31 @@
+columns:
+    id:
+        label: 'No'
+        type: row_number
+        sortable: true
+        width: 5%
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    brand:
+        label: Brands
+        type: text
+        searchable: true
+        sortable: true
+        select: title
+        relation: brand
+    category:
+        label: Categories
+        type: text
+        searchable: true
+        sortable: true
+        select: title
+        relation: category
+    created_at:
+        label: Date
+        type: datetime
+        searchable: true
+        sortable: true
+        width: 15%

@@ -1,0 +1,43 @@
+// Fonts 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
+@import url(https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap);
+
+
+body {
+  background: #000000;
+  font-family: $secondary-font;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; 
+  font-family: $secondary-font;
+  color:#272727;
+}
+
+a {
+  color: $primary-color;
+  -webkit-transition: color 400ms, background-color 400ms;
+  -moz-transition: color 400ms, background-color 400ms;
+  -o-transition:  color 400ms, background-color 400ms;
+  transition:  color 400ms, background-color 400ms;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: darken($primary, 10%);
+  }
+
+}
+
+hr {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #fff;
+}

@@ -1,0 +1,9 @@
+name: 'First Wave'
+description: 'First Wave Theme'
+author: 'First Wave Agency'
+homepage: ''
+code: 'firstwave'
+form: config/fields.yaml
+
+# [...]
+

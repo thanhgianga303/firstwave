@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    
+    <title>Qruu City</title>
+
+    <style>
+
+      @font-face {
+        font-family: 'Bowlby One SC';
+        src: url(./fonts/BowlbyOneSC-Regular.ttf);
+      }
+
+      @font-face {
+        font-family: 'Outfit';
+        src: url(./fonts/Outfit.ttf);
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+      }
+
+      p.lead {
+        font-family: 'Outfit', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+      }
+      
+      input {
+        font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+      }
+
+      .header-text {
+        font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+        font-size:48px;
+      }
+
+      header {
+        position: relative;
+        height:85vh;
+        width:100%;
+        background-image: url('./img/header.jpg');
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .header-logo {
+        position:absolute;
+        top:40px;
+        left:40px;
+        width: 280px;
+      }
+
+      .header-caption-container {
+        -webkit-clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+        position:absolute;
+        bottom:90px;
+        margin-left: -30px;
+        padding-left:50px;
+        padding-top:10px;
+        padding-right:20px;
+        background: #000;
+        border-top-right-radius:10px;
+        border-bottom-right-radius: 60px;
+        transform: rotate(-5deg);
+      }
+      
+      .header-caption-text {
+        font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+        font-size: 36px;
+      }
+
+      .btn-black {
+        font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+        font-size:24px;
+        background:#000;
+        color:#fff;
+        padding-left:30px;
+        padding-right:30px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-radius:10px;
+      }
+
+      .btn-black:hover {
+        color:#999;
+      }
+
+      .btn-yellow {
+        font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+        font-size:22px;
+        background:#F9AC00;
+        color:#000;
+        padding-left:40px;
+        padding-right:40px;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-radius:10px;
+      }
+
+      .btn-yellow:hover {
+        background:#CC9E37;
+        color:#333;
+      }
+
+      #readMore {
+        position: relative;
+        margin-top:-50px;
+        background-image: url('./img/patterns/mid-section-bg.png');
+        background-size: cover;
+        background-repeat: repeat;
+        padding-top:100px;
+        padding-bottom:100px;
+        color: #000;
+      }
+
+      #betaFormContainer {
+        position: relative;
+        -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+        background-image: url('./img/patterns/form-bg.jpg');
+        background-size: cover;
+        background-repeat: repeat;
+        margin-top:-30px;
+        padding-top:100px;
+        padding-bottom:70px;
+        color: #fff;
+      }
+
+      #betaForm {
+        position: relative;
+        background-image: url('./img/patterns/form-input-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+        margin-top:-30px;
+        padding-top:50px;
+        padding-bottom:50px;
+        padding-left:50px;
+        padding-right:50px;
+        border-radius: 20px;
+        color: #fff;
+      }
+
+      .form-caption-container {
+        position:absolute;
+        bottom:-40px;
+        right:-40px;
+        transform: rotate(-5deg);
+      }
+      
+      .form-caption-text {
+        font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        color:#000;
+        text-shadow:
+          -5px -5px 0 #fff,
+          0   -5px 0 #fff,
+          5px -5px 0 #fff,
+          5px  0   0 #fff,
+          5px  5px 0 #fff,
+          0    5px 0 #fff,
+          -5px  5px 0 #fff,
+          -5px  0   0 #fff;
+      }
+
+      footer {
+        margin-top:-30px;
+        -webkit-clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0%, 100% 8%, 100% 100%, 0 100%);
+        background:#313131;
+        color:#fff;
+        padding-top:90px;
+        padding-bottom:50px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <header>
+
+      <img src="img/logo/qruu-city-black.png" class="header-logo" />      
+      
+      <div class="container text-center" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);">
+        <div class="row">
+          <div class="col">
+            <h3 class="header-caption-text" style="color:#fff;">Play in the Metaverse<br/>Earn in the Real World</h3>
+            <a href="#betaForm" class="btn btn-yellow shadow-lg mt-3">Join Beta Test</a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- Centre Stage -->
+    <section id="readMore">
+
+      <a href="#readMore" style="position:absolute; left:50%; top:-20px; transform:translateX(-50%);">
+        <img src="img/down-arrow.png" width="40" />
+      </a>
+
+      <div class="container">
+        
+        <!-- Title -->
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <h2 class="header-caption-text">Have Fun And Earn Real-World Brand Rewards</h2>
+            <p class="mt-4">Qruu City offers lots to do: socialise, play games, shop, and more. And as you engage with our metaverse, you’re unlocking sweet discounts and deals with your favourite brands.</p>
+            <p class="mt-3">Fun has never been so rewarding, and the rewards have never been this real. Join our beta test today!</p>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="./img/characters/girl.png" width="100%" />
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Beta Form -->
+    <section id="betaFormContainer">
+
+      <img src="./img/patterns/top-cordon.png" height="120" style="position:absolute; top:-15px; z-index:9999; min-width:100vw;" />
+
+      <div class="container" style="margin-top:100px; margin-bottom:100px;">
+        
+        <!-- Title -->
+        <div class="row justify-content-center">
+
+          <div id="betaForm" class="col-10 col-lg-8 text-center">
+
+            <img src="./img/characters/rabbit.png" height="100" style="position:absolute; top:80px; left:-40px; z-index:9999; " />
+
+            <h2 class="header-caption-text px-sm-5" style="color:#fff;">Be Among The First To Test This Out!</h2>
+            <form class="form" action="https://gmail.us14.list-manage.com/subscribe/post?u=ee3dbfd2d1e7ce6d21926491b&amp;id=432ea879d4" method="post" target="_blank">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="input-group mt-4">
+                    <input class="form-control form-control-lg" type="text" name="FNAME" placeholder="Name" required />
+                  </div>
+                  <div class="input-group mt-3">
+                    <input class="form-control form-control-lg" type="email" name="EMAIL" placeholder="Email" required />
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-yellow shadow-lg mt-4 mb-3" href="#">Submit</button>
+            </form>
+
+            <div class="form-caption-container">
+              <h4 class="form-caption-text">Coming May<br/>2022!</h4>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+
+      <img src="./img/patterns/bottom-cordon.png" height="120" style="position:absolute; bottom:-15px; z-index:9999; min-width:100vw;" />
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-3">
+            <img src="img/logo/qruu-city-white.png" width="215" />
+          </div>
+          <div class="col-lg-4 mb-3">
+            <p class="mb-0 small">© 2022 Qruu City. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <a href="https://www.facebook.com/qruucity" target="_blank" rel="noopener noreferrer" class="mr-2"><img src="img/socials/facebook.png" width="50" /></a>
+            <a href="https://www.instagram.com/qruucity/?hl=en" target="_blank" rel="noopener noreferrer" class="mr-2"><img src="img/socials/instagram.png" width="50" /></a>
+            <!-- <a href="#"><img src="img/socials/tiktok.png" width="50" /></a> -->
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script>
+
+      $(document).ready(function(){
+        smoothScrollingTo(location.hash);
+      });
+
+      $('a[href^=\\#]').on('click', function(event){     
+        event.preventDefault();
+        smoothScrollingTo(this.hash);
+      });
+
+      function smoothScrollingTo(target){
+        $('html,body').animate({scrollTop:$(target).offset().top}, 500);
+      }
+      
+    </script>
+
+  </body>
+</html>

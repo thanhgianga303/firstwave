@@ -1,0 +1,10 @@
+==
+{##}
+<div class="x-banner-black w-100"></div>
+<section id="work-banner" class="banner">
+    {% if work.work_cover %}
+        <img src="{{work.work_cover.path}}"  class="w-100" alt="{{work.title}}">
+    {% else %}
+        <img src="{{ 'assets/images/projects/no-cover.png'|theme }}"  class="w-100" alt="{{work.title}}">
+    {% endif %}
+</section>

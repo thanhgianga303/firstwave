@@ -1,0 +1,33 @@
+#banner{
+    .jumbotron{
+        padding:0 !important;
+        background-color: transparent;
+        color:$white;
+
+        h1{
+            color:$white;
+            font-size:120px;
+            line-height: 120px;
+            font-weight: 800;
+        }
+
+        .lead{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 26.4px;
+            margin:2.5rem 0;
+        }
+
+        .btn{
+            color:$white;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 12px 25px;
+
+            &:hover{
+                color:$major_color;
+            }
+        }
+    }
+}
+

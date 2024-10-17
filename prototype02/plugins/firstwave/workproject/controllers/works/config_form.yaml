@@ -1,0 +1,10 @@
+name: Works
+form: $/firstwave/workproject/models/work/fields.yaml
+modelClass: FirstWave\WorkProject\Models\Work
+defaultRedirect: firstwave/workproject/works
+create:
+    redirect: 'firstwave/workproject/works/update/:id'
+    redirectClose: firstwave/workproject/works
+update:
+    redirect: firstwave/workproject/works
+    redirectClose: firstwave/workproject/works

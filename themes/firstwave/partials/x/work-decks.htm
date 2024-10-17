@@ -1,0 +1,16 @@
+==
+<section id="works" class="section-container fwx">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInRight">
+                <div class="row masonry-row">
+                {% for work in works %}
+                    {% for brand in work.brand if brand.id == 2%}
+                        {% partial "widgets/x-work-card" img=work.work_cover.thumb(auto,450) url=work.slug %}
+                    {% endfor %}
+                {% endfor %}
+                </div>
+            </div>  
+        </div>
+    </div>
+</section>
