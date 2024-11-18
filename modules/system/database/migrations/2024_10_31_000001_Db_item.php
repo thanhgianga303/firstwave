@@ -10,12 +10,14 @@ class DbItem extends Migration
     {
         Schema::create($this->table, function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('component_id')->nullable();
+            $table->integer('component_item_id')->nullable();
+            $table->integer('item_type')->nullable();
             $table->string('name')->nullable();
             $table->string('image')->nullable();
             $table->decimal('delay',10,2)->nullable();
             $table->integer('fade')->nullable();
             $table->text('description')->nullable();
+            $table->integer('order')->nullable();
             $table->integer('deleted')->default(0);
         });
     }

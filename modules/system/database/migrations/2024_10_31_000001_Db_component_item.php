@@ -12,11 +12,12 @@ class DbComponentItem extends Migration
             $table->bigIncrements('id');
             $table->integer('component_id')->nullable();
             $table->string('name')->nullable();
-            $table->integer('type')->nullable();
+            $table->integer('component_item_type')->nullable();
             $table->string('image')->nullable();
             $table->decimal('delay',10,2)->nullable();
             $table->integer('fade')->nullable();
             $table->text('description')->nullable();
+            $table->integer('order')->nullable();
             $table->integer('deleted')->default(0);
         });
     }

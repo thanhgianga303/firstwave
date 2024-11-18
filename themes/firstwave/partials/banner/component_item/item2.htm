@@ -1,0 +1,6 @@
+==
+function onStart() {
+    $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
+}
+==
+<p class="lead wow {{fade_type[component_item.fade]}}" data-wow-delay="{{ component_item.delay }}">{{component_item.description|md_safe}}</p>
