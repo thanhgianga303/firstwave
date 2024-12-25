@@ -1,0 +1,11 @@
+fields:
+    name:
+        label: 'Name'
+        span: left
+        placeholder: 'Name'
+        type: text
+    partial:
+        label: 'Partial'
+        span: right
+        placeholder: 'Partial'
+        type: text

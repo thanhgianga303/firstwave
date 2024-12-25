@@ -22,3 +22,7 @@ navigation:
                 label: Brand
                 url: firstwave/workproject/brands
                 icon: icon-tag
+            side-menu-item4:
+                label: Component Type
+                url: firstwave/workproject/componenttype
+                icon: icon-tag

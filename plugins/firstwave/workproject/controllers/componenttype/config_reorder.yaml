@@ -1,0 +1,4 @@
+title: Component Type
+modelClass: FirstWave\WorkProject\Models\ComponentType
+toolbar:
+    buttons: reorder_toolbar
