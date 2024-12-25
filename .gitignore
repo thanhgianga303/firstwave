@@ -1,2 +1,6 @@
 .DS_Store
 *.log
+/storage/*
+!/storage/app/*
+!/storage/framework/*
+!/storage/logs/*
