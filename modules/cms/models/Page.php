@@ -57,7 +57,9 @@ class Page extends Model
      * @var ThemeData Cached array of objects
      */
     protected static $instances = [];
-
+    public function components() {
+        return $this->hasMany(Component::class, 'page', 'id');
+    }
     public static function getComponent($id) {
         $data = self::find($id)->toArray();
         $data['components'] = Component::where('page', $id)->with('r_component_type')->get()->toArray();

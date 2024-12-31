@@ -1,4 +1,6 @@
-<?php namespace Cms\Models;
+<?php
+
+namespace Cms\Models;
 
 use Lang;
 use Model;
@@ -13,8 +15,7 @@ use System\Models\File;
  * @package october\cms
  * @author Alexey Bobkov, Samuel Georges
  */
-class Component extends Model
-{
+class Component extends Model {
     use \October\Rain\Database\Traits\Validation;
 
     /**
@@ -62,5 +63,14 @@ class Component extends Model
 
     public function r_component_type() {
         return $this->belongsTo(ComponentType::class, 'component_type');
+    }
+
+    /**
+     * Returns options for the component_type dropdown.
+     *
+     * @return array
+     */
+    public static function getComponentTypeOptions() {
+        return ComponentType::all()->lists('name', 'id');
     }
 }

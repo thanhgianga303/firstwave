@@ -26,3 +26,7 @@ navigation:
                 label: Component Type
                 url: firstwave/workproject/componenttype
                 icon: icon-tag
+            side-menu-item5:
+                label: Component Item Type
+                url: firstwave/workproject/componentitemtype
+                icon: icon-tag

@@ -1,0 +1,54 @@
+modelClass: Cms\Models\Component
+list: $/firstwave/workproject/models/component/columns.yaml
+title: Components
+
+emptyMessage: No components found
+columns:
+    id:
+        label: ID
+        searchable: true
+        sortable: true
+    name:
+        label: Name
+        searchable: true
+        sortable: true
+    component_type:
+        label: Type
+        type: dropdown
+        options: Cms\Models\Component::getComponentTypeOptions
+        searchable: true
+        sortable: true
+    page_record.name:
+        label: Page
+        searchable: true
+        sortable: true
+    order:
+        label: Order
+        sortable: true
+    sort_order:
+        label: Sort Order
+        sortable: true
+    deleted:
+        label: Deleted
+        type: checkbox
+        sortable: true
+    created_at:
+        label: Created At
+        type: datetime
+        sortable: true
+    updated_at:
+        label: Updated At
+        type: datetime
+        sortable: true
+filter:
+    # Define filters if needed
+toolbar:
+    buttons:
+        create:
+            label: Create Component
+            icon: icon-plus
+bulkActions:
+    delete:
+        label: Delete Selected
+        icon: icon-trash
+        confirm: 'Are you sure you want to delete the selected components?'

@@ -2,6 +2,7 @@
 
 use Lang;
 use ApplicationException;
+use Cms\Models\Component;
 use October\Rain\Filesystem\Definitions as FileDefinitions;
 
 /**

@@ -1,0 +1,12 @@
+list: $/firstwave/workproject/models/componentitemtype/columns.yaml
+modelClass: FirstWave\WorkProject\Models\ComponentItemType
+title: Component Item Type
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'firstwave/workproject/componentitemtype/update/:id'
