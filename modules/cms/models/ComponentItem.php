@@ -1,4 +1,6 @@
-<?php namespace Cms\Models;
+<?php
+
+namespace Cms\Models;
 
 use Lang;
 use Model;
@@ -13,8 +15,7 @@ use System\Models\File;
  * @package october\cms
  * @author Alexey Bobkov, Samuel Georges
  */
-class ComponentItem extends Model
-{
+class ComponentItem extends Model {
     use \October\Rain\Database\Traits\Validation;
 
     /**
@@ -64,16 +65,26 @@ class ComponentItem extends Model
     public $rules = [];
 
     /**
-     * @var array Relations
-     */
-    public $attachOne = [];
-
-    /**
      * @var ThemeData Cached array of objects
      */
     protected static $instances = [];
 
     public function r_component_item_type() {
         return $this->belongsTo(ComponentItemType::class, 'component_item_type');
+    }
+
+    public function r_component() {
+        return $this->belongsTo(Component::class, 'component_id');
+    }
+
+    public function getComponentItemTypeOptions() {
+        $component_id = $this->original['component_id'];
+        // Ensure the model's component_id is set
+        if (!$component_id) {
+            return []; // No component_id, no options
+        }
+
+        // Call the static method with the current component_id
+        return ComponentItemType::where('component_type_id', $component_id)->lists('name', 'id');
     }
 }

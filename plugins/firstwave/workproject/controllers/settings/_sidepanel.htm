@@ -256,9 +256,11 @@
     }
 
     .home-section {
+        display: flex;
+        padding: 1rem;
         position: relative;
         background: #E4E9F7;
-        height: 100vh;
+        height: calc(100vh - 60px);
         left: 260px;
         width: calc(100% - 260px);
         transition: all 0.5s ease;
@@ -302,6 +304,21 @@
         border: none;
         cursor: pointer;
     }
+
+    .w-100 {
+        width: 100% !important;
+    }
+
+    .w-50 {
+        width: 50% !important;
+    }
+
+    .preview {
+        height: 90%;
+        width: 100%;
+        border: none;
+        padding: 0.5em;
+    }
 </style>
 <div class="sidebar">
     <ul class="nav-links">
@@ -319,9 +336,8 @@
             <ul class="sub-menu">
                 <?php foreach ($group as $page): ?>
                 <li>
-                    <button class="btn-none" id="ComponentPage" name="Component[page]" data-request="onLoadPages"
-                        data-request-data="page: '<?= htmlspecialchars($page->url) ?>'"
-                        data-request-success="updatePageDetails(data)">
+                    <button data-request="onLoadPages" data-request-data="page: '<?= htmlspecialchars($page->url) ?>'"
+                        data-request-success="updatePageDetails(data)" class="btn-none">
                         <?= ucfirst(htmlspecialchars($page->title)) ?>
                     </button>
                 </li>
@@ -333,12 +349,9 @@
 </div>
 
 <section class="home-section">
-    <div id="page-details-container" style="display: none;">
-        <h4>Page Details</h4>
-        <p id="page-description"></p>
-        <h5>Associated Components:</h5>
-        <ul id="associated-components-list"></ul>
-    </div>
+    <div class="w-50" id="listContainer"></div>
+    <div class="w-50 preview" id="pageDetails"></div>
+    <div id="formContainer"></div>
 </section>
 <script>
     let arrow = document.querySelectorAll(".arrow");
@@ -350,7 +363,6 @@
     }
     let sidebar = document.querySelector(".sidebar");
     let sidebarBtn = document.querySelector(".bx-menu");
-    console.log(sidebarBtn);
     sidebarBtn.addEventListener("click", () => {
         sidebar.classList.toggle("close");
     });
@@ -360,35 +372,17 @@
        *
        * @param {Object} data - The JSON response from the AJAX handler.
        */
-    function updatePageDetails(data) {
-        if (data.status === 'success') {
-            // Update page details
-            document.getElementById('page-description').textContent = data.page.description || 'No description available.';
-
-            // Update associated components list
-            var componentsList = document.getElementById('associated-components-list');
-            componentsList.innerHTML = ''; // Clear existing list
-
-            if (data.components.length > 0) {
-                data.components.forEach(function (component) {
-                    var li = document.createElement('li');
-                    li.textContent = component.name + ' (' + component.description + ')';
-                    componentsList.appendChild(li);
-                });
-            } else {
-                var li = document.createElement('li');
-                li.textContent = 'No components associated with this page.';
-                componentsList.appendChild(li);
-            }
-
-            // Show the page details container
-            document.getElementById('page-details-container').style.display = 'block';
+    function updatePageDetails(response) {
+        console.log(response);
+        if (response?.page_id) {
+            const url = new URL(window.location);
+            url.searchParams.set('page_id', response.page_id);
+            window.history.pushState({}, '', url);
         } else {
-            // Handle errors
-            alert(data.message);
-            document.getElementById('page-details-container').style.display = 'none';
+            document.getElementById('listContainer').innerHTML = '';
         }
     }
+
     /**
      * Utility function to escape HTML to prevent XSS attacks.
      * @param {string} unsafe - The string to escape.

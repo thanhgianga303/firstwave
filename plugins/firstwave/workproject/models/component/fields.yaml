@@ -1,0 +1,11 @@
+fields:
+    name:
+        label: Name
+        type: text
+    component_type:
+        label: Type
+        type: dropdown
+        options: getComponentTypeOptions
+    description:
+        label: Description
+        type: richeditor

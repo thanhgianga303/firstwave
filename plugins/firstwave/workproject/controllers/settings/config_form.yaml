@@ -1,0 +1,3 @@
+form: $/firstwave/workproject/models/component/fields.yaml
+title: Components
+modelClass: Firstwave\Workproject\Models\Component

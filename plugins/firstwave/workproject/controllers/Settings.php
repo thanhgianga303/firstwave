@@ -1,13 +1,15 @@
 <?php
 
-namespace Backend\Controllers;
+namespace Firstwave\Workproject\Controllers;
 
 use Backend\Classes\Controller;
 use Backend\Facades\BackendMenu;
 use Cms\Classes\Page as ClassesPage;
 use Cms\Classes\Theme;
 use Cms\Models\Page;
+use FirstWave\WorkProject\Models\Component;
 use Illuminate\Support\Facades\Response;
+use October\Rain\Support\Facades\Url;
 
 /**
  * Backend Media Manager
@@ -21,18 +23,22 @@ class Settings extends Controller {
      */
     public $implement = [
         'Backend\Behaviors\ListController',
-        'Backend\Behaviors\FormController'
+        'Backend\Behaviors\FormController',
+        'Backend\Behaviors\ReorderController'
     ];
+
 
     /**
      * @var string The controller's list configuration file.
      */
     public $listConfig = 'config_list.yaml';
+    public $reorderConfig = 'config_reorder.yaml';
 
     /**
      * @var string The controller's form configuration file.
      */
     public $formConfig = 'config_form.yaml';
+    public $filterPageId = null;
     /**
      * @var array Permissions required to view this page.
      */
@@ -42,7 +48,9 @@ class Settings extends Controller {
      */
     public function __construct() {
         parent::__construct();
-        BackendMenu::setContext('October.Backend', 'website', true);
+        $this->filterPageId = get('page_id');
+        $this->makeLists();
+        BackendMenu::setContext('Firstwave.Workproject', 'main-menu-item', 'settings');
         $this->pageTitle = 'Website Settings';
         BackendMenu::setContextMainMenu('website');
     }
@@ -71,7 +79,6 @@ class Settings extends Controller {
      * @return mixed JSON response
      */
     public function onLoadPages() {
-        // Retrieve data sent via AJAX
         $pageIdentifier = post('page'); // Expecting the page ID
 
         if (!$pageIdentifier) {
@@ -83,6 +90,7 @@ class Settings extends Controller {
 
         // Fetch the Page along with its Components
         $page = Page::with('components')->where('part', $pageIdentifier)->first();
+
         if (!$page) {
             return Response::json([
                 'status'  => 'error',
@@ -90,29 +98,48 @@ class Settings extends Controller {
             ], 404);
         }
 
-        // Prepare the data to send back
-        $data = [
-            'status'     => 'success',
-            'page'       => [
-                'id'          => $page->id,
-                'name'        => $page->name,
-                'description' => $page->description,
-            ],
-            'components' => $page->components->map(function ($component) {
-                return [
-                    'id'             => $component->id,
-                    'name'           => $component->name,
-                    'component_type' => $component->component_type,
-                    'description'    => $component->description,
-                    'order'          => $component->order,
-                    'sort_order'     => $component->sort_order,
-                    'deleted'        => $component->deleted,
-                    'created_at'     => $component->created_at,
-                    'updated_at'     => $component->updated_at,
-                ];
-            }),
+        $this->filterPageId = $page->id;
+        $previewUrl     = Url::to($pageIdentifier, [], true);
+        $previewHtml    = $this->makePartial('page_details', ['url' => $previewUrl]);
+        return [
+            '#listContainer'    => $this->listRender(),
+            'page_id'           => $page->id,
+            '#formContainer'    => '',
+            '#pageDetails'      => $previewHtml,
         ];
+    }
 
-        return Response::json($data);
+    public function listExtendQuery($query) {
+        if ($this->filterPageId) {
+            $query->where('page', $this->filterPageId);
+        }
+    }
+
+    public function onLoadCreateForm() {
+        $model = new Component();
+        $this->initForm($model);
+        // Render view
+        $viewHtml = $this->makePartial('create', [
+            'model'     => $model,
+            'page_id'   => $this->filterPageId,
+        ]);
+        return [
+            '#formContainer'    => $viewHtml,
+            'page_id'           => $this->filterPageId,
+            '#listContainer'    => '',
+            '#pageDetails'      => '',
+        ];
+    }
+
+    public function onSave() {
+        $data           = post();
+        $model          = new Component();
+        $model->page    = $this->filterPageId;
+        $model->fill($data['Component']);
+        $model->save();
+        return [
+            '#listContainer' => $this->listRender(),
+            '#formContainer' => '',
+        ];
     }
 }
