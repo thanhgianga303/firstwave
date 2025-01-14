@@ -16,4 +16,8 @@ class ComponentType extends Controller
         parent::__construct();
         BackendMenu::setContext('FirstWave.WorkProject', 'main-menu-item', 'side-menu-item4');
     }
+    public function getComponentTypeOptions() {
+        return ComponentType::lists('name', 'id');
+    }
+    
 }

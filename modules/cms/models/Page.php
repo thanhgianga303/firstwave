@@ -33,8 +33,10 @@ class Page extends Model
     protected $fillable = [
         'id',
         'name',
+        'path',
         'description',
         'order',
+        'sort_order',
         'deleted'
     ];
 
@@ -60,9 +62,11 @@ class Page extends Model
     public function components() {
         return $this->hasMany(Component::class, 'page', 'id');
     }
-    public static function getComponent($id) {
-        $data = self::find($id)->toArray();
-        $data['components'] = Component::where('page', $id)->with('r_component_type')->get()->toArray();
+    public static function getComponent($path) {
+        $page = self::where('path', $path)->first();
+        if (!$page) return [];
+        $data = $page->toArray();
+        $data['components'] = Component::where('page', $page['id'])->orderBy('sort_order')->with('r_component_type')->get()->toArray();
         foreach ($data['components'] as $key => $component) {
             $component_items = ComponentItem::where('component_id', $component['id'])->with('r_component_item_type')->get()->toArray();
             $data['components'][$key]['component_items'] = $component_items; 

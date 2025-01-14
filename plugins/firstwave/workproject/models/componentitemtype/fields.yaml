@@ -9,3 +9,9 @@ fields:
         span: right
         placeholder: 'Partial'
         type: text
+    component_type_id:
+        label: 'Component Type'
+        span: left
+        type: dropdown
+        required: true
+        options: getComponentTypeOptions

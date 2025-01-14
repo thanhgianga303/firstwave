@@ -89,8 +89,9 @@ class Settings extends Controller {
         }
 
         // Fetch the Page along with its Components
-        $page = Page::with('components')->where('part', $pageIdentifier)->first();
-
+        $page = Page::with(['components' => function ($query) {
+            $query->orderBy('sort_order');
+        }])->where('path', $pageIdentifier)->first();
         if (!$page) {
             return Response::json([
                 'status'  => 'error',

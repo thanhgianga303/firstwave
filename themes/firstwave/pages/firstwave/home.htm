@@ -3,12 +3,15 @@ url = "/firstwave"
 layout = "default"
 is_hidden = 0
 ==
+function onStart() {
+    $page      = Cms\Models\Page::getComponent("/firstwave");
+    $this['page'] = $page;
+    $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
+}
+==
 {% partial "inc/nav" this_page='firstwave'%}
 <div class="main" id="main">
-    {% partial "banner/main" %}
-    {% partial "about/main" %}
-    {% partial "main-home/services" %}
-    {% partial "main-home/our-reach" %}
-    {% partial "main-home/partners-carousel" %}
-    {% partial "widgets/contact" %}
+    {% for component in page.components %}
+        {% partial component.r_component_type.partial component=component fade_type=fade_type %}
+    {% endfor %}
 </div>

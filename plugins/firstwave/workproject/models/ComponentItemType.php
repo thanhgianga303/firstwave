@@ -18,4 +18,7 @@ class ComponentItemType extends Model {
      */
     public $rules = [
     ];
+    public static function getComponentTypeOptions() {
+        return ComponentType::orderBy('sort_order')->pluck('name', 'id')->toArray();
+    }
 }
