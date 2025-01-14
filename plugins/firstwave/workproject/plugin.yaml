@@ -18,6 +18,10 @@ navigation:
                 label: Category
                 url: firstwave/workproject/categories
                 icon: icon-tag
+            side-menu-item1:
+                label: Project Deliverables
+                url: firstwave/workproject/projectdeliverables
+                icon: icon-tag
             side-menu-item3:
                 label: Brand
                 url: firstwave/workproject/brands

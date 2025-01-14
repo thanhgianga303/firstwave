@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Project Controller
+
+# Model Form Field configuration
+form: $/firstwave/workproject/models/projectcontroller/fields.yaml
+
+# Model Class name
+modelClass: Firstwave\Workproject\Models\ProjectController
+
+# Default redirect location
+defaultRedirect: firstwave/workproject/projectcontroller
+
+# Create page
+create:
+    title: Create Project Controller
+    redirect: firstwave/workproject/projectcontroller/update/:id
+    redirectClose: firstwave/workproject/projectcontroller
+
+# Update page
+update:
+    title: Edit Project Controller
+    redirect: firstwave/workproject/projectcontroller
+    redirectClose: firstwave/workproject/projectcontroller
+
+# Preview page
+preview:
+    title: Preview Project Controller

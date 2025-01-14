@@ -1,0 +1,10 @@
+name: Project Deliverables
+form: $/firstwave/workproject/models/projectdeliverables/fields.yaml
+modelClass: FirstWave\WorkProject\Models\ProjectDeliverables
+defaultRedirect: firstwave/workproject/projectdeliverables
+create:
+    redirect: 'firstwave/workproject/projectdeliverables/update/:id'
+    redirectClose: firstwave/workproject/projectdeliverables
+update:
+    redirect: firstwave/workproject/projectdeliverables
+    redirectClose: firstwave/workproject/projectdeliverables
