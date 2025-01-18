@@ -1,0 +1,17 @@
+fields:
+    name:
+        label: 'Name'
+        span: left
+        placeholder: 'Name'
+        type: text
+    partial:
+        label: 'Partial'
+        span: right
+        placeholder: 'Partial'
+        type: text
+    component_type_id:
+        label: 'Component Type'
+        span: left
+        type: dropdown
+        required: true
+        options: getComponentTypeOptions

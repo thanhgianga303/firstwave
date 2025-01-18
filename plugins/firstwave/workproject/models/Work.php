@@ -37,6 +37,11 @@ class Work extends Model
             'table' => 'firstwave_workproject_works_to_cat',
             'order' => 'id'
         ],
+        'project_deliverables' => [
+            'FirstWave\WorkProject\Models\ProjectDeliverables',
+            'table' => 'works_to_proj_deli',
+            'order' => 'id'
+        ],
         'brand' => [
             'FirstWave\WorkProject\Models\Brand',
             'table' => 'firstwave_workproject_works_to_brands',

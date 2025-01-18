@@ -1,0 +1,10 @@
+name: Component Type
+form: $/firstwave/workproject/models/componenttype/fields.yaml
+modelClass: FirstWave\WorkProject\Models\ComponentType
+defaultRedirect: firstwave/workproject/componenttype
+create:
+    redirect: 'firstwave/workproject/componenttype/update/:id'
+    redirectClose: firstwave/workproject/componenttype
+update:
+    redirect: firstwave/workproject/componenttype
+    redirectClose: firstwave/workproject/componenttype

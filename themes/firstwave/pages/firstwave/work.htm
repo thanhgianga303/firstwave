@@ -5,6 +5,8 @@ is_hidden = 0
 ==
 <?php
     use FirstWave\WorkProject\Models\Work;
+    use FirstWave\WorkProject\Models\ProjectDeliverables;
+    use FirstWave\WorkProject\Models\Category;
 
     function onStart(){
         $this->prepareVars();
@@ -12,16 +14,14 @@ is_hidden = 0
 
     function prepareVars(){
         $this['works'] = Work::where('status', true)->get();
+        $this['categories'] = Category::get();
+        $this['project_deliverables'] = ProjectDeliverables::get();
     }
 ?>
 ==
 {% partial "inc/nav" this_page='firstwave'%}
 <div class="main" id="main">
     {% partial "main-work/banner" %}
-    {% partial "main-work/gallery" TITLE='Activation, Engagement & Media Tech' CAT_ID=1 %}
-    {% partial "main-work/gallery" TITLE='Gamified Engagement' CAT_ID=2 %}
-    {% partial "main-work/gallery" TITLE='Virtual & Hybrid Projects' CAT_ID=3 %}
-    {% partial "main-work/gallery" TITLE='Conferences & Corporate Events' CAT_ID=4 %}
-    {% partial "main-work/gallery" TITLE='Outdoor Events & Festivals' CAT_ID=5 %}
+    {% partial "main-work/works" TITLE='Outdoor Events & Festivals' CAT_ID=5 %}
     {% partial "widgets/contact" %}
 </div>

@@ -1,0 +1,13 @@
+==
+<section id="services" class="section-container">
+    <div class="container">
+        <div class="section-header wow" data-wow-delay="0.6s">
+            <h2 class="section-title text-left text-white">{{ component.name }}</h2>
+        </div>
+        <div class="row features">
+            {% for component_item in component.component_items %}
+                {% partial component_item.r_component_item_type.partial component_item=component_item fade_type=fade_type %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

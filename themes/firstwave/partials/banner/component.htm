@@ -1,0 +1,10 @@
+==
+<section id="banner" class="bg-image-gradient">
+    <div class="container">
+        <div class="jumbotron main-banner">
+            {% for component_item in component.component_items %}
+                {% partial component_item.r_component_item_type.partial component_item=component_item fade_type=fade_type %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

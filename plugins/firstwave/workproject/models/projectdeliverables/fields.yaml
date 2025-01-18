@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: 'Project Deliverables'
+        span: auto
+        placeholder: 'Project Deliverables'
+        type: text
+tabs:
+    fields:
+        description:
+            label: description
+            size: large
+            span: full
+            type: textarea
+            tab: Content

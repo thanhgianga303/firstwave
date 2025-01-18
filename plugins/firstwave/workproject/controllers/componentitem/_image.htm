@@ -1,0 +1,7 @@
+<?php
+// Storage path
+$mediaPath = $record->image ? System\Classes\MediaLibrary::url($record->image) : null;
+?>
+<img src="<?= $mediaPath ?>" alt="Image" style="max-height: 100px;
+width: 100px;
+object-fit: cover;" />

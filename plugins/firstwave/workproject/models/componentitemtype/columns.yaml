@@ -1,0 +1,21 @@
+columns:
+    id:
+        label: No.
+        type: number
+        sortable: true
+        width: 5%
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    partial:
+        label: Partial
+        type: text
+        searchable: true
+        sortable: true
+    component_type_id:
+        label: Component Type
+        type: text
+        searchable: true
+        sortable: true

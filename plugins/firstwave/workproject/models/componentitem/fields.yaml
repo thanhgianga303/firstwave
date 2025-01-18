@@ -1,0 +1,40 @@
+fields:
+    name:
+        label: 'Name'
+        span: left
+        placeholder: 'Name'
+        type: text
+        required: true
+    image:
+        label: 'Image'
+        span: right
+        type: mediafinder
+        mode: image
+        imageWidth: 200
+        imageHeight: 200
+        placeholder: 'Image'
+        required: true
+    description:
+        label: 'Description'
+        type: richeditor
+        size: small
+        placeholder: 'Description'
+        required: true
+    component_item_type:
+        label: 'Component Item Type'
+        span: left
+        type: dropdown
+        required: true
+        options: getComponentItemTypeOptions
+    delay:
+        label: 'Delay time to show'
+        span: left
+        type: number
+        placeholder: 'seconds'
+        required: true
+    fade:
+        label: 'Fade time to show'
+        span: right
+        type: number
+        placeholder: 'seconds'
+        required: true

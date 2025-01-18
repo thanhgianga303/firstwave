@@ -33,6 +33,20 @@ tabs:
             span: left
             type: relation
             tab: Category
+        project_deliverables:
+            label: Project Deliverables
+            nameFrom: name
+            descriptionFrom: description
+            span: left
+            type: relation
+            tab: Project Deliverables
+        category:
+            label: Category
+            nameFrom: title
+            descriptionFrom: description
+            span: left
+            type: relation
+            tab: Category
         brand:
             label: Brand
             nameFrom: title

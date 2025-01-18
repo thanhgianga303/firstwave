@@ -1,6 +1,7 @@
 <?php namespace FirstWave\WorkProject;
 
 use System\Classes\PluginBase;
+use Backend;
 
 class Plugin extends PluginBase
 {
@@ -29,4 +30,5 @@ class Plugin extends PluginBase
             }
         ];
     }
+
 }

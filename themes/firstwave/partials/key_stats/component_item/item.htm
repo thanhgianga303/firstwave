@@ -1,0 +1,17 @@
+==
+function onStart() {
+    $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
+}
+==
+<div class="col-lg-3 col-md-6 col-sm-6 wow {{fade_type[component_item.fade]}}" data-wow-delay="{{ component_item.delay }}">
+    <div class="media service-box">
+        <div class="media-body">
+            <div class="hex-icon coat">
+                <div class="hex-icon hex-inner">
+                     <img src="{{ component_item.image|theme }}" class="hex-symbol" height="55px" alt="14 year of Experience">
+                </div>
+            </div>
+            <h4 class="media-heading text-white">{{ component_item.description|md_safe }}</h4>
+        </div>
+    </div>
+</div>
