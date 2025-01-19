@@ -1,0 +1,32 @@
+1737230701a:1:{s:15:"inc/scripts.htm";a:6:{s:8:"fileName";s:15:"inc/scripts.htm";s:7:"content";s:635:"==
+{##}
+<script src="{{ [
+    'assets/vendor/jquery/dist/jquery.js',
+    'assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js',
+    'assets/vendor/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js',
+    'assets/vendor/slick-1.8.1/slick/slick.min.js',
+    'assets/vendor/slick-lightbox/dist/slick-lightbox.min.js',
+    'assets/vendor/counterup/jquery.waypoints.min.js',
+    'assets/vendor/counterup/jquery.counterup.min.js',
+    'assets/vendor/masonry-layouts/masonry.js',
+    'assets/vendor/wow/dist/wow.min.js',
+    'assets/js/main.js',
+    '@framework',
+    '@framework.extras'
+]|theme }}"></script> 
+{% scripts %}";s:5:"mtime";i:1728245976;s:6:"markup";s:631:"{##}
+<script src="{{ [
+    'assets/vendor/jquery/dist/jquery.js',
+    'assets/vendor/jquery-migrate/jquery-migrate-1.2.1.min.js',
+    'assets/vendor/bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js',
+    'assets/vendor/slick-1.8.1/slick/slick.min.js',
+    'assets/vendor/slick-lightbox/dist/slick-lightbox.min.js',
+    'assets/vendor/counterup/jquery.waypoints.min.js',
+    'assets/vendor/counterup/jquery.counterup.min.js',
+    'assets/vendor/masonry-layouts/masonry.js',
+    'assets/vendor/wow/dist/wow.min.js',
+    'assets/js/main.js',
+    '@framework',
+    '@framework.extras'
+]|theme }}"></script> 
+{% scripts %}";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

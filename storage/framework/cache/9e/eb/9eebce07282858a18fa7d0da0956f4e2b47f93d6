@@ -1,0 +1,17 @@
+1737230706a:1:{s:19:"about/component.htm";a:5:{s:8:"fileName";s:19:"about/component.htm";s:7:"content";s:371:"<section id="about" class="main bg-image-crowd">
+    <div class="container">
+        <div class="row align-items-center">
+            {% for component_item in component.component_items %}
+                {% partial component_item.r_component_item_type.partial description=component_item.description %}
+            {% endfor %}
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1731955227;s:6:"markup";s:371:"<section id="about" class="main bg-image-crowd">
+    <div class="container">
+        <div class="row align-items-center">
+            {% for component_item in component.component_items %}
+                {% partial component_item.r_component_item_type.partial description=component_item.description %}
+            {% endfor %}
+        </div>
+    </div>
+</section>";s:4:"code";N;}}

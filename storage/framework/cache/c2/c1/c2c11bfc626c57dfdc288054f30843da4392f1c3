@@ -1,0 +1,46 @@
+1737230700a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:519:"description = "Default layout"
+[contactform]
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% partial "inc/meta" %}
+    {% partial "inc/styles" %}
+</head>
+<body>
+    <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    {% page %}
+    {% partial "inc/footer" %}
+    {% partial "inc/scripts" %}
+</body>
+</html>";s:5:"mtime";i:1728245973;s:6:"markup";s:468:"<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% partial "inc/meta" %}
+    {% partial "inc/styles" %}
+</head>
+<body>
+    <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    {% page %}
+    {% partial "inc/footer" %}
+    {% partial "inc/scripts" %}
+</body>
+</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";s:11:"contactform";a:0:{}}}

@@ -1,0 +1,218 @@
+1737230706a:1:{s:11:"inc/nav.htm";a:6:{s:8:"fileName";s:11:"inc/nav.htm";s:7:"content";s:5595:"==
+{##}
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        {% if this_page == 'x'%}
+        <a class="navbar-brand py-2" href="{{ 'x/home'|page }}">
+            <picture>
+                <source media="(max-width:575.98px)" srcset="{{ 'assets/images/logo/firstwave-x-landscape.svg'|theme }}" height="60px">
+                <img src="{{ 'assets/images/logo/firstwave-x-landscape.svg'|theme }}" height="70px" alt="First Wave">
+            </picture>
+        </a>
+        {% elseif this_page == 'ventures' %}
+        <a class="navbar-brand py-2" href="{{ 'ventures/home'|page }}">
+            <picture>
+                <source media="(max-width:575.98px)" srcset="{{ 'assets/images/logo/firstwave-ventures-landscape.svg'|theme }}" height="60px">
+                <img src="{{ 'assets/images/logo/firstwave-ventures-landscape.svg'|theme }}" height="70px" alt="First Wave Ventures">
+            </picture>
+        </a>
+        {% else %}
+        <a class="navbar-brand py-2" href="{{ 'firstwave/home'|page }}">
+            <picture>
+                <source media="(max-width:575.98px)" srcset="{{ 'assets/images/logo/firstwave-landscape.svg'|theme }}" height="60px">
+                <img src="{{ 'assets/images/logo/firstwave-landscape.svg'|theme }}" height="70px" alt="First Wave">
+            </picture>
+        </a>
+        {% endif %}
+        
+        <button class="navbar-toggler" id="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbar-menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="menu-grid"></span>Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="{{ 'firstwave/home'|page }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <span class="item-fw-logo fw-icon-m"></span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                         First Wave
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ 'x/home'|page }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <span class="item-fw-logo fw-icon-x"></span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        First Wave X
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ 'ventures/home'|page }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <span class="item-fw-logo fw-icon-v"></span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        First Wave<br/> Ventures
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                {% if this_page == 'x'%}
+                <li class="nav-item scroll">
+                    <a href="{{ 'x/home'|page }}#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'x/home'|page }}#process" class="nav-link">Process</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'x/work'|page }}" class="nav-link">Work</a>
+                </li>
+                {% elseif this_page == 'ventures' %}
+                <li class="nav-item scroll">
+                    <a href="{{ 'ventures/ventures-about'|page }}" class="nav-link">About</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'ventures/home'|page }}#our-work" class="nav-link">Work</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a href="{{ 'firstwave/home'|page }}" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ 'firstwave/work'|page }}" class="nav-link">Work</a>
+                </li>
+                {% endif %}
+                <li class="nav-item scroll">
+                    <a href="#get-in-touch"  class="nav-link">Connect</a>
+                </li>   
+            </ul>
+        </div>
+    </div>
+</nav>";s:5:"mtime";i:1728245976;s:6:"markup";s:5591:"{##}
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        {% if this_page == 'x'%}
+        <a class="navbar-brand py-2" href="{{ 'x/home'|page }}">
+            <picture>
+                <source media="(max-width:575.98px)" srcset="{{ 'assets/images/logo/firstwave-x-landscape.svg'|theme }}" height="60px">
+                <img src="{{ 'assets/images/logo/firstwave-x-landscape.svg'|theme }}" height="70px" alt="First Wave">
+            </picture>
+        </a>
+        {% elseif this_page == 'ventures' %}
+        <a class="navbar-brand py-2" href="{{ 'ventures/home'|page }}">
+            <picture>
+                <source media="(max-width:575.98px)" srcset="{{ 'assets/images/logo/firstwave-ventures-landscape.svg'|theme }}" height="60px">
+                <img src="{{ 'assets/images/logo/firstwave-ventures-landscape.svg'|theme }}" height="70px" alt="First Wave Ventures">
+            </picture>
+        </a>
+        {% else %}
+        <a class="navbar-brand py-2" href="{{ 'firstwave/home'|page }}">
+            <picture>
+                <source media="(max-width:575.98px)" srcset="{{ 'assets/images/logo/firstwave-landscape.svg'|theme }}" height="60px">
+                <img src="{{ 'assets/images/logo/firstwave-landscape.svg'|theme }}" height="70px" alt="First Wave">
+            </picture>
+        </a>
+        {% endif %}
+        
+        <button class="navbar-toggler" id="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbar-menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="menu-grid"></span>Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="{{ 'firstwave/home'|page }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <span class="item-fw-logo fw-icon-m"></span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                         First Wave
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ 'x/home'|page }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <span class="item-fw-logo fw-icon-x"></span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        First Wave X
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ 'ventures/home'|page }}">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <span class="item-fw-logo fw-icon-v"></span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        First Wave<br/> Ventures
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                {% if this_page == 'x'%}
+                <li class="nav-item scroll">
+                    <a href="{{ 'x/home'|page }}#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'x/home'|page }}#process" class="nav-link">Process</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'x/work'|page }}" class="nav-link">Work</a>
+                </li>
+                {% elseif this_page == 'ventures' %}
+                <li class="nav-item scroll">
+                    <a href="{{ 'ventures/ventures-about'|page }}" class="nav-link">About</a>
+                </li>
+                <li class="nav-item scroll">
+                    <a href="{{ 'ventures/home'|page }}#our-work" class="nav-link">Work</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a href="{{ 'firstwave/home'|page }}" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ 'firstwave/work'|page }}" class="nav-link">Work</a>
+                </li>
+                {% endif %}
+                <li class="nav-item scroll">
+                    <a href="#get-in-touch"  class="nav-link">Connect</a>
+                </li>   
+            </ul>
+        </div>
+    </div>
+</nav>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

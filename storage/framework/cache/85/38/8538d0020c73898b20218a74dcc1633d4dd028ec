@@ -1,0 +1,8 @@
+1737230706a:1:{s:31:"banner/component_item/item2.htm";a:6:{s:8:"fileName";s:31:"banner/component_item/item2.htm";s:7:"content";s:237:"==
+function onStart() {
+    $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
+}
+==
+<p class="lead wow {{fade_type[component_item.fade]}}" data-wow-delay="{{ component_item.delay }}">{{component_item.description|md_safe}}</p>";s:5:"mtime";i:1731954824;s:6:"markup";s:141:"<p class="lead wow {{fade_type[component_item.fade]}}" data-wow-delay="{{ component_item.delay }}">{{component_item.description|md_safe}}</p>";s:4:"code";s:86:"function onStart() {
+    $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
+}";s:17:"_PARSER_ERROR_INI";s:0:"";}}

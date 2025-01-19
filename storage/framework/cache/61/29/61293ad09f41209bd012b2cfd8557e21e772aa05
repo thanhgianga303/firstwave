@@ -1,0 +1,76 @@
+1737230700a:1:{s:23:"widgets/modal-cards.htm";a:6:{s:8:"fileName";s:23:"widgets/modal-cards.htm";s:7:"content";s:1602:"==
+{##}
+<div class="card-group">
+    <div class="card">
+        <a class="card-url" href="{{ 'firstwave/home'|page }}">First Wave</a>
+        <div class="menu-img-holder p-2 fw-tab1">
+            <div class="menu-img text-center">
+                <img src="{{ 'assets/images/fw-logo-svg.svg'|theme }}" alt="First Wave Agency">
+            </div>
+            <div class="menu-title text-center py-2">
+                <img src="{{ 'assets/images/firstwave-m.svg'|theme }}"  alt="First Wave Agency">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <a class="card-url" href="{{ 'x/home'|page }}">First Wave X</a>
+        <div class="menu-img-holder p-2 fw-tab2">
+            <div class="menu-img text-center">
+                <img src="{{ 'assets/images/fw-x-svg.svg'|theme }}" alt="First Wave X">
+            </div>
+            <div class="menu-title text-center py-2">
+                <img src="{{ 'assets/images/firstwave-x.svg'|theme }}"  alt="First Wave X">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <a class="card-url" href="{{ 'ventures/home'|page }}">First Wave Ventures</a>
+        <div class="menu-img-holder p-2 fw-tab3">
+            <div class="menu-img text-center">
+                <img src="{{ 'assets/images/fw-v-svg.svg'|theme }}" alt="First Wave Ventures">
+            </div>
+            <div class="menu-title text-center py-2">
+                <img src="{{ 'assets/images/firstwave-ventures.svg'|theme }}" alt="First Wave Ventures">
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1728245981;s:6:"markup";s:1598:"{##}
+<div class="card-group">
+    <div class="card">
+        <a class="card-url" href="{{ 'firstwave/home'|page }}">First Wave</a>
+        <div class="menu-img-holder p-2 fw-tab1">
+            <div class="menu-img text-center">
+                <img src="{{ 'assets/images/fw-logo-svg.svg'|theme }}" alt="First Wave Agency">
+            </div>
+            <div class="menu-title text-center py-2">
+                <img src="{{ 'assets/images/firstwave-m.svg'|theme }}"  alt="First Wave Agency">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <a class="card-url" href="{{ 'x/home'|page }}">First Wave X</a>
+        <div class="menu-img-holder p-2 fw-tab2">
+            <div class="menu-img text-center">
+                <img src="{{ 'assets/images/fw-x-svg.svg'|theme }}" alt="First Wave X">
+            </div>
+            <div class="menu-title text-center py-2">
+                <img src="{{ 'assets/images/firstwave-x.svg'|theme }}"  alt="First Wave X">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <a class="card-url" href="{{ 'ventures/home'|page }}">First Wave Ventures</a>
+        <div class="menu-img-holder p-2 fw-tab3">
+            <div class="menu-img text-center">
+                <img src="{{ 'assets/images/fw-v-svg.svg'|theme }}" alt="First Wave Ventures">
+            </div>
+            <div class="menu-title text-center py-2">
+                <img src="{{ 'assets/images/firstwave-ventures.svg'|theme }}" alt="First Wave Ventures">
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

@@ -1,0 +1,13 @@
+1737230707a:1:{s:41:"clients/component_item/component_item.htm";a:5:{s:8:"fileName";s:41:"clients/component_item/component_item.htm";s:7:"content";s:210:"
+<div class="col-4 col-lg-4 wow fadeInLeft">
+    <div class="partners-holder">
+        {% set url = 'assets/images/' ~ component_item.image %}
+        <img src="{{ url|theme }}">
+    </div>
+</div>  
+    ";s:5:"mtime";i:1735845959;s:6:"markup";s:200:"<div class="col-4 col-lg-4 wow fadeInLeft">
+    <div class="partners-holder">
+        {% set url = 'assets/images/' ~ component_item.image %}
+        <img src="{{ url|theme }}">
+    </div>
+</div>";s:4:"code";N;}}

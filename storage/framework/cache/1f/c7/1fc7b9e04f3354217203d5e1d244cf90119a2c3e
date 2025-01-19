@@ -1,0 +1,9 @@
+1737230706a:1:{s:32:"about/component_item/caption.htm";a:5:{s:8:"fileName";s:32:"about/component_item/caption.htm";s:7:"content";s:144:"<div class="col-lg-6 wow fadeInLeft py-3 py-lg-5">
+    <h1 class="h2 caption text-white">
+        {{ description|md_safe }}
+    </h1>
+</div>";s:5:"mtime";i:1730921521;s:6:"markup";s:144:"<div class="col-lg-6 wow fadeInLeft py-3 py-lg-5">
+    <h1 class="h2 caption text-white">
+        {{ description|md_safe }}
+    </h1>
+</div>";s:4:"code";N;}}
