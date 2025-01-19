@@ -1,0 +1,18 @@
+1737230706a:1:{s:20:"banner/component.htm";a:6:{s:8:"fileName";s:20:"banner/component.htm";s:7:"content";s:384:"==
+<section id="banner" class="bg-image-gradient">
+    <div class="container">
+        <div class="jumbotron main-banner">
+            {% for component_item in component.component_items %}
+                {% partial component_item.r_component_item_type.partial component_item=component_item fade_type=fade_type %}
+            {% endfor %}
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1731958293;s:6:"markup";s:380:"<section id="banner" class="bg-image-gradient">
+    <div class="container">
+        <div class="jumbotron main-banner">
+            {% for component_item in component.component_items %}
+                {% partial component_item.r_component_item_type.partial component_item=component_item fade_type=fade_type %}
+            {% endfor %}
+        </div>
+    </div>
+</section>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

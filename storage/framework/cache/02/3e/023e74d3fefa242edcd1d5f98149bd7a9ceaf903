@@ -1,0 +1,26 @@
+1737230700a:1:{s:23:"firstwave-test/home.htm";a:9:{s:8:"fileName";s:23:"firstwave-test/home.htm";s:7:"content";s:526:"title = "First Wave Agency SG"
+url = "/firstwave-test"
+layout = "default"
+is_hidden = 0
+==
+function onStart() {
+    $page      = Cms\Models\Page::getComponent("/firstwave-test");
+    $this['page'] = $page;
+    $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
+}
+==
+{% partial "inc/nav" this_page='firstwave'%}
+<div class="main" id="main">
+    {% for component in page.components %}
+        {% partial component.r_component_type.partial component=component fade_type=fade_type %}
+    {% endfor %}
+</div>";s:5:"mtime";i:1735836814;s:6:"markup";s:242:"{% partial "inc/nav" this_page='firstwave'%}
+<div class="main" id="main">
+    {% for component in page.components %}
+        {% partial component.r_component_type.partial component=component fade_type=fade_type %}
+    {% endfor %}
+</div>";s:4:"code";s:182:"function onStart() {
+    $page      = Cms\Models\Page::getComponent("/firstwave-test");
+    $this['page'] = $page;
+    $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
+}";s:5:"title";s:20:"First Wave Agency SG";s:3:"url";s:15:"/firstwave-test";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

@@ -1,0 +1,39 @@
+1737230700a:1:{s:15:"x/view-work.htm";a:9:{s:8:"fileName";s:15:"x/view-work.htm";s:7:"content";s:594:"title = "First Wave - X View Work"
+url = "/x/work/:slug"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+        $this['this_work'] = $this->param('slug');
+        $this['work'] = Work::where('slug', '=', $this->param('slug'))->first();
+    }
+?>
+==
+{##}
+{% partial "inc/nav" this_page='x'%}
+{% if work %}
+<div class="main" id="main">
+    {% partial "x-view-work/banner" %}
+    {% partial "x-view-work/content" %}
+    {% partial "x-view-work/images" %}
+    {% partial "x-view-work/more" %}
+</div>
+{% endif %}
+";s:5:"mtime";i:1728245974;s:6:"markup";s:267:"{##}
+{% partial "inc/nav" this_page='x'%}
+{% if work %}
+<div class="main" id="main">
+    {% partial "x-view-work/banner" %}
+    {% partial "x-view-work/content" %}
+    {% partial "x-view-work/images" %}
+    {% partial "x-view-work/more" %}
+</div>
+{% endif %}";s:4:"code";s:210:"    use FirstWave\WorkProject\Models\Work;
+
+    function onStart(){
+        $this['this_work'] = $this->param('slug');
+        $this['work'] = Work::where('slug', '=', $this->param('slug'))->first();
+    }";s:5:"title";s:24:"First Wave - X View Work";s:3:"url";s:13:"/x/work/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

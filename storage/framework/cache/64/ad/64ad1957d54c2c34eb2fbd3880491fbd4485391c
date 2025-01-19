@@ -1,0 +1,24 @@
+1737230707a:1:{s:21:"contact/component.htm";a:6:{s:8:"fileName";s:21:"contact/component.htm";s:7:"content";s:431:"==
+<section id="get-in-touch" class="section-container bg-x">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 wow fadeInLeft">
+                <h1 class="h2 lets-connect mb-5 mb-lg-0">Let’s <br/>Connect</h1>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                {% component 'contactform' %}
+            </div>
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1730394627;s:6:"markup";s:427:"<section id="get-in-touch" class="section-container bg-x">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 wow fadeInLeft">
+                <h1 class="h2 lets-connect mb-5 mb-lg-0">Let’s <br/>Connect</h1>
+            </div>
+            <div class="col-lg-7 wow fadeInLeft">
+                {% component 'contactform' %}
+            </div>
+        </div>
+    </div>
+</section>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

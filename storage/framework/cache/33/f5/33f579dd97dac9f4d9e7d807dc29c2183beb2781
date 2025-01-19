@@ -1,0 +1,44 @@
+1737230700a:1:{s:18:"firstwave/work.htm";a:9:{s:8:"fileName";s:18:"firstwave/work.htm";s:7:"content";s:782:"title = "First Wave Agency SG"
+url = "/firstwave/work"
+layout = "default"
+is_hidden = 0
+==
+<?php
+    use FirstWave\WorkProject\Models\Work;
+    use FirstWave\WorkProject\Models\ProjectDeliverables;
+    use FirstWave\WorkProject\Models\Category;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['works'] = Work::where('status', true)->get();
+        $this['categories'] = Category::get();
+        $this['project_deliverables'] = ProjectDeliverables::get();
+    }
+?>
+==
+{% partial "inc/nav" this_page='firstwave'%}
+<div class="main" id="main">
+    {% partial "main-work/banner" %}
+    {% partial "main-work/works" TITLE='Outdoor Events & Festivals' CAT_ID=5 %}
+    {% partial "widgets/contact" %}
+</div>";s:5:"mtime";i:1737050508;s:6:"markup";s:238:"{% partial "inc/nav" this_page='firstwave'%}
+<div class="main" id="main">
+    {% partial "main-work/banner" %}
+    {% partial "main-work/works" TITLE='Outdoor Events & Festivals' CAT_ID=5 %}
+    {% partial "widgets/contact" %}
+</div>";s:4:"code";s:431:"    use FirstWave\WorkProject\Models\Work;
+    use FirstWave\WorkProject\Models\ProjectDeliverables;
+    use FirstWave\WorkProject\Models\Category;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['works'] = Work::where('status', true)->get();
+        $this['categories'] = Category::get();
+        $this['project_deliverables'] = ProjectDeliverables::get();
+    }";s:5:"title";s:20:"First Wave Agency SG";s:3:"url";s:15:"/firstwave/work";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
