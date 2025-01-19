@@ -1,8 +1,6 @@
-==
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
@@ -10,7 +8,7 @@
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            /* padding: 20px; */
         }
 
         .container {
@@ -34,13 +32,17 @@
             background: none;
             border: none;
             color: white;
-            font-size: 18px;
-            text-decoration: underline;
+            font-size: 30px;
             cursor: pointer;
             display: flex;
             align-items: center;
             gap: 5px;
         }
+
+        .filter-btn.active {
+            text-decoration: underline;
+        }
+
 
         .filter-icon {
             background: none;
@@ -58,15 +60,16 @@
         }
 
         .tag {
-            background-color: #4B5563;
             padding: 8px 12px;
             border-radius: 6px;
+            border-color: red;
             text-wrap: nowrap;
+            border: 1px solid;
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(10, 1fr);
             gap: 10px;
             margin-top: 20px;
         }
@@ -76,6 +79,8 @@
             border-radius: 6px;
             cursor: pointer;
             transition: transform 0.3s ease-in-out;
+            height: 100px;
+            object-fit: cover;
         }
 
         .gallery img:hover {
@@ -115,60 +120,78 @@
             border: none;
             cursor: pointer;
         }
+
+        .pt-20 {
+            padding-top: 20px;
+        }
+
+        .pr-100 {
+            padding-right: 100px;
+        }
+
+        .pl-100 {
+            padding-left: 100px;
+        }
     </style>
 </head>
 
-<section id="works-section" class="pt-100 pb-2 section-container bg-darker {{ CAT_ID == 5 ? 'pb-100' : '' }}">
-        <!-- Header -->
-        <h1>WORK</h1>
-    
-        <!-- Filters -->
-        <div class="filters">
-            <button class="filter-icon" onclick="toggleFilters()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <button class="filter-btn" onclick="toggleFilter('eventTypes')">
-                Event Types
-            </button>
-            <button class="filter-btn" onclick="toggleFilter('projectDeliverables')">
-                Project Deliverables
-            </button>
-            <button class="filter-btn" onclick="resetFilters()">
-                Reset Filters
-            </button>
-        </div>
-    
-        <!-- Filter Tags -->
-        <div id="eventTypes" class="filter-tags">
-            {% for category in categories %}
-                <span class="tag" id="{{ category.id }}" onclick="toggleFiltersType({{ category.id }}, 'data-categories')">
-                    {{ category.title }}
-                </span>
-            {% endfor %}
-        </div>
-        <div id="projectDeliverables" class="filter-tags">
-            {% for project_deliverable in project_deliverables %}
-                <span class="tag" id="{{ project_deliverable.id }}" onclick="toggleFiltersType({{ project_deliverable.id }}, 'data-project-deliverable')">{{ project_deliverable.name }}</span>
-            {% endfor %}
-        </div>
-    
-        <!-- Image Gallery -->
-        <div class="gallery">
-            {% for work in works %}
-                {% set specificCategories = [] %}
-                {% set specificProjectDeliverable = [] %}
-                {% for category in work.category%}
-                    {% set specificCategories = specificCategories|merge([category.id]) %}
-                {% endfor %}
-                {% for project_deliverable in work.project_deliverables %}
-                    {% set specificProjectDeliverable = specificCategories|merge([category.id]) %}
-                {% endfor %}
-                {% for brand in work.brand if brand.id == '1'%}
-                    <a class="work" data-project-deliverable="{{ specificCategories|join(', ')}}" data-categories="{{ specificCategories|join(', ')}}" href="{{ 'firstwave/view-work'|page({ slug: work.slug }) }}"><img src="{{ work.work_cover.path }}" alt="Event Image 1"></a>
-                {% endfor %}
-            {% endfor %}
-        </div>
-    
+<section id="works-section"
+    class="pr-100 pl-100 pt-20 pb-2 section-container bg-darker {{ CAT_ID == 5 ? 'pb-100' : '' }}">
+    <!-- Header -->
+    <!-- <h1>WORK</h1> -->
+
+    <!-- Filters -->
+    <div class="filters">
+        <button class="filter-icon active" onclick="toggleFilters()">
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <button class="filter-btn active" onclick="toggleFilter('eventTypes', this)">
+            Event Types
+        </button>
+        <button class="filter-btn" onclick="toggleFilter('projectDeliverables', this)">
+            Project Deliverables
+        </button>
+        <button class="filter-btn" onclick="resetFilters()" style="color: #9c59e3;">
+            <b>Reset Filters</b>
+        </button>
+    </div>
+
+    <!-- Filter Tags -->
+    <div id="eventTypes" class="filter-tags">
+        {% for category in categories %}
+        <span class="tag" id="{{ category.id }}" onclick="toggleFiltersType({{ category.id }}, 'data-categories')">
+            {{ category.title }}
+        </span>
+        {% endfor %}
+    </div>
+    <div id="projectDeliverables" class="filter-tags">
+        {% for project_deliverable in project_deliverables %}
+        <span class="tag" id="{{ project_deliverable.id }}"
+            onclick="toggleFiltersType({{ project_deliverable.id }}, 'data-project-deliverable')">{{
+            project_deliverable.name }}</span>
+        {% endfor %}
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        {% for work in works %}
+        {% set specificCategories = [] %}
+        {% set specificProjectDeliverable = [] %}
+        {% for category in work.category%}
+        {% set specificCategories = specificCategories|merge([category.id]) %}
+        {% endfor %}
+        {% for project_deliverable in work.project_deliverables %}
+        {% set specificProjectDeliverable = specificCategories|merge([category.id]) %}
+        {% endfor %}
+        {% for brand in work.brand if brand.id == '1'%}
+        <a class="work" data-project-deliverable="{{ specificCategories|join(', ')}}"
+            data-categories="{{ specificCategories|join(', ')}}"
+            href="{{ 'firstwave/view-work'|page({ slug: work.slug }) }}"><img src="{{ work.work_cover.path }}"
+                alt="Event Image 1"></a>
+        {% endfor %}
+        {% endfor %}
+    </div>
+
     <!-- Image Modal -->
     <div id="imageModal" class="modal" onclick="closeModal(event)">
         <div class="modal-content">
@@ -178,23 +201,39 @@
             <img id="modalImg">
         </div>
     </div>
-    
+
     <script>
-        toggleFilter('eventTypes');
+        toggleFilter('eventTypes', document.querySelector('.filter-btn.active'));
         function toggleFilters() {
             var allFilterTags = document.querySelectorAll('.filter-tags');
+            var filterIcon = document.querySelector('.filter-icon');
+            var changeIcon = false;
             allFilterTags.forEach(function (tag) {
                 var display = tag.style.display;
                 if (tag.classList.contains('active') && display === "none") {
                     tag.style.display = "flex";
+                    changeIcon = true;
                 } else {
                     tag.style.display = "none";
                 }
             });
+
+            if (changeIcon) {
+                filterIcon.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
+                filterIcon.classList.remove('active');
+            } else {
+                filterIcon.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+                filterIcon.classList.add('active');
+            }
         }
-    
-        function toggleFilter(id) {
+
+        function toggleFilter(id, element) {
             var allFilterTags = document.querySelectorAll('.filter-tags');
+            var allFilterBtns = document.querySelectorAll('.filter-btn');
+            allFilterBtns.forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+            element.classList.add('active');
             allFilterTags.forEach(function (tag) {
                 tag.style.display = "none";
                 tag.classList.remove('active');
@@ -208,13 +247,12 @@
             element.classList.add('active');
             clearFilter();
         }
-    
-    
+
         function resetFilters() {
             var allFilterTags = document.querySelectorAll('.filter-tags');
             clearFilter();
         }
-    
+
         // Open image in modal
         function openModal(imgElement) {
             var modal = document.getElementById('imageModal');
@@ -222,7 +260,7 @@
             modalImg.src = imgElement.src;
             modal.style.display = "flex";
         }
-    
+
         // Close modal when clicking outside or on close button
         function closeModal(event) {
             var modal = document.getElementById('imageModal');
@@ -234,8 +272,8 @@
         function toggleFiltersType(id, type) {
             var allFilterTags = document.querySelectorAll('.work');
             allFilterTags.forEach(function (tag) {
-                var display     = tag.style.display;
-                var types  = tag.getAttribute(type);
+                var display = tag.style.display;
+                var types = tag.getAttribute(type);
                 var typesArray = types.split(',').map(Number);
                 if (typesArray.includes(id)) {
                     tag.style.display = "block";
@@ -244,7 +282,7 @@
                 }
             });
         }
-        
+
         function clearFilter() {
             var allFilterTags = document.querySelectorAll('.work');
             allFilterTags.forEach(function (tag) {
