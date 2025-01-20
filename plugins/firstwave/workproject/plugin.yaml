@@ -18,6 +18,10 @@ navigation:
                 label: Category
                 url: firstwave/workproject/categories
                 icon: icon-tag
+            side-menu-item6:
+                label: Clients
+                url: firstwave/workproject/client
+                icon: icon-tag
             side-menu-item1:
                 label: Project Deliverables
                 url: firstwave/workproject/projectdeliverables

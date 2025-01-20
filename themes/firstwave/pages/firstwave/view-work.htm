@@ -6,7 +6,8 @@ is_hidden = 0
 <?php
     use FirstWave\WorkProject\Models\Work;
     function onStart(){
-       $this['project'] = Work::where('slug', '=', $this->param('slug'))->first();
+       $project = Work::where('slug', '=', $this->param('slug'))->first();
+       $this['project'] = $project;
     }
 ?>
 ==

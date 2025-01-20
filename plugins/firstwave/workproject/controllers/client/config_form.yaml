@@ -1,0 +1,10 @@
+name: Client
+form: $/firstwave/workproject/models/client/fields.yaml
+modelClass: FirstWave\WorkProject\Models\Client
+defaultRedirect: firstwave/workproject/client
+create:
+    redirect: 'firstwave/workproject/client/update/:id'
+    redirectClose: firstwave/workproject/client
+update:
+    redirect: firstwave/workproject/client
+    redirectClose: firstwave/workproject/client

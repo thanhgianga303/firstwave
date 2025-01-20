@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: No.
+        type: number
+        sortable: true
+        width: 5%
+    name:
+        label: name
+        type: text
+        searchable: true
+        sortable: true

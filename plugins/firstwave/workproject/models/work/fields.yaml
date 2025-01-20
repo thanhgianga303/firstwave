@@ -54,6 +54,13 @@ tabs:
             span: auto
             type: relation
             tab: Category
+        client:
+            label: Client
+            nameFrom: name
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: Client
         status:
             label: Published
             span: auto
