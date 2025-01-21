@@ -7,22 +7,19 @@
            <div class="info-desc">{{ project.description|raw }}</div>
         </div>
         {% else %}
-        <div class="col-lg-5 wow fadeInLeft py-3 py-lg-5">
+        <div class="col-lg-6 wow fadeInLeft py-3 py-lg-5">
+            <div class="info-desc">{{ project.description|raw }}</div>
+        </div>
+        <div class="col-lg-6 wow fadeInLeft py-3 py-lg-5">
             <div class="divider">
                 <h3 class="text-white">Client</h3>
                 <p class="info-sub">{{ project.client }}</p>
             </div>
             <div class="divider">
-                <h3 class="text-white">Event</h3>
-                <div class="info-sub"> {{ project.event|raw }} </div>
+                <h3 class="text-white">Deliverables</h3>
+                <div class="info-desc">{{ project.description|raw }}</div>
             </div>
         </div>
-
-        <div class="col-lg-7 wow fadeInRight py-3 py-lg-5">
-             <h3 class="text-white">Deliverables</h3>
-            <div class="info-desc">{{ project.description|raw }}</div>
-        </div>
-
         {% endif %}
         </div>
     </div>

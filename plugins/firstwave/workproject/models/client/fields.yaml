@@ -1,0 +1,41 @@
+fields:
+    name:
+        label: 'Client name'
+        span: left
+        placeholder: 'Client name'
+        type: text
+    slug:
+        label: 'Brand Slug'
+        span: right
+        placeholder: brand-slug
+        preset:
+            field: title
+            type: slug
+        type: text
+tabs:
+    fields:
+        description:
+            label: Description
+            size: large
+            span: full
+            type: textarea
+            tab: Content
+        testimony:
+            label: testimony
+            size: large
+            span: full
+            type: textarea
+            tab: Content
+        client_cover:
+            label: 'Cover Image'
+            mode: image
+            imageWidth: '250'
+            imageHeight: '250'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            comment: '( Pls set specific dimension )'
+            tab: Config

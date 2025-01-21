@@ -47,5 +47,10 @@ class Work extends Model
             'table' => 'firstwave_workproject_works_to_brands',
             'order' => 'id'
         ],
+        'client' => [
+            'FirstWave\WorkProject\Models\Client',
+            'table' => 'works_to_client',
+            'order' => 'id'
+        ],
     ];
 }

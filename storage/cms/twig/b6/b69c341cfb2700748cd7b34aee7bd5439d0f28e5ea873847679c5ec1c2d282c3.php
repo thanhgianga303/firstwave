@@ -79,7 +79,7 @@ class __TwigTemplate_961a1dafdd0a5c919551621b37c66771e263f65e175c232591e990efc2f
         </div>
     </div>
 
-    <div class=\"card\">
+    <!-- <div class=\"card\">
         <a class=\"card-url\" href=\"";
         // line 28
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("ventures/home");
@@ -98,7 +98,7 @@ class __TwigTemplate_961a1dafdd0a5c919551621b37c66771e263f65e175c232591e990efc2f
         echo "\" alt=\"First Wave Ventures\">
             </div>
         </div>
-    </div>
+    </div> -->
 </div>";
     }
 
@@ -145,7 +145,7 @@ class __TwigTemplate_961a1dafdd0a5c919551621b37c66771e263f65e175c232591e990efc2f
         </div>
     </div>
 
-    <div class=\"card\">
+    <!-- <div class=\"card\">
         <a class=\"card-url\" href=\"{{ 'ventures/home'|page }}\">First Wave Ventures</a>
         <div class=\"menu-img-holder p-2 fw-tab3\">
             <div class=\"menu-img text-center\">
@@ -155,7 +155,7 @@ class __TwigTemplate_961a1dafdd0a5c919551621b37c66771e263f65e175c232591e990efc2f
                 <img src=\"{{ 'assets/images/firstwave-ventures.svg'|theme }}\" alt=\"First Wave Ventures\">
             </div>
         </div>
-    </div>
+    </div> -->
 </div>", "C:\\xampppp\\htdocs\\firstwave/themes/firstwave/partials/widgets/modal-cards.htm", "");
     }
     

@@ -1,0 +1,4 @@
+title: Cliens
+modelClass: FirstWave\WorkProject\Models\Client
+toolbar:
+    buttons: reorder_toolbar

@@ -1,5 +1,11 @@
 <?php 
-class Cms67894ecbdd6a3021746339_7c503e4bd21018e0d64735507565bb47Class extends Cms\Classes\PartialCode
+use FirstWave\WorkProject\Models\Client;class Cms678fe19945f4d232778724_92934a3cdba0fa9e1178928c0e62769bClass extends Cms\Classes\PartialCode
 {
-
+    
+public function onStart(){
+        $this->prepareVars();
+    }
+public function prepareVars(){
+        $this['clients'] = Client::get();
+    }
 }

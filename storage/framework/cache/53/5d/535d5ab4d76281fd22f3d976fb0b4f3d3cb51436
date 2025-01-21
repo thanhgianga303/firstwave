@@ -1,4 +1,4 @@
-1737230700a:1:{s:23:"firstwave/view-work.htm";a:9:{s:8:"fileName";s:23:"firstwave/view-work.htm";s:7:"content";s:508:"title = "Work"
+1737485027a:1:{s:23:"firstwave/view-work.htm";a:9:{s:8:"fileName";s:23:"firstwave/view-work.htm";s:7:"content";s:537:"title = "Work"
 url = "/firstwave/work/:slug"
 layout = "default"
 is_hidden = 0
@@ -6,7 +6,8 @@ is_hidden = 0
 <?php
     use FirstWave\WorkProject\Models\Work;
     function onStart(){
-       $this['project'] = Work::where('slug', '=', $this->param('slug'))->first();
+       $project = Work::where('slug', '=', $this->param('slug'))->first();
+       $this['project'] = $project;
     }
 ?>
 ==
@@ -16,13 +17,14 @@ is_hidden = 0
     {% partial "main-view-work/info" %}
     {% partial "main-view-work/similar" %}
     {% partial "widgets/contact" %}
-</div>";s:5:"mtime";i:1728245974;s:6:"markup";s:247:"{% partial "inc/nav" this_page='firstwave'%}
+</div>";s:5:"mtime";i:1737270632;s:6:"markup";s:247:"{% partial "inc/nav" this_page='firstwave'%}
 <div class="main" id="main">
     {% partial "main-view-work/banner" %}
     {% partial "main-view-work/info" %}
     {% partial "main-view-work/similar" %}
     {% partial "widgets/contact" %}
-</div>";s:4:"code";s:158:"    use FirstWave\WorkProject\Models\Work;
+</div>";s:4:"code";s:187:"    use FirstWave\WorkProject\Models\Work;
     function onStart(){
-       $this['project'] = Work::where('slug', '=', $this->param('slug'))->first();
+       $project = Work::where('slug', '=', $this->param('slug'))->first();
+       $this['project'] = $project;
     }";s:5:"title";s:4:"Work";s:3:"url";s:21:"/firstwave/work/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

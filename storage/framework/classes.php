@@ -280,4 +280,6 @@
   'Firstwave\\Workproject\\Models\\Work' => 'plugins\\firstwave\\workproject\\models\\Work.php',
   'cms\\Controllers\\themes' => 'modules\\cms\\controllers\\themes.php',
   'system\\Controllers\\mailbrandsettings' => 'modules\\system\\controllers\\mailbrandsettings.php',
+  'FirstWave\\WorkProject\\Models\\Client' => 'plugins\\firstwave\\workproject\\models\\Client.php',
+  'firstwave\\workproject\\Controllers\\client' => 'plugins\\firstwave\\workproject\\controllers\\client.php',
 );
