@@ -1,193 +1,52 @@
-1737230707a:1:{s:21:"clients/component.htm";a:5:{s:8:"fileName";s:21:"clients/component.htm";s:7:"content";s:5495:"<section id="partners" class="section-container">
+1737484663a:1:{s:21:"clients/component.htm";a:6:{s:8:"fileName";s:21:"clients/component.htm";s:7:"content";s:789:"==
+<?php
+    use FirstWave\WorkProject\Models\Client;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['clients'] = Client::get();
+    }
+?>
+==
+<section id="partners" class="section-container">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title text-left text-white wow fadeInDown">Social Proof</h2>
+            <h2 class="section-title text-left text-white wow fadeInDown">{{ component.name}}</h2>
         </div>
-        <div class="partners-carousel"> 
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
+        <div class="row"> 
+            {% for client in clients %}
+            <div class="col-2">
+                <div class="partners-holder">
+                    <img src="{{ client.client_cover.path }}" alt="{{ client.name}}">
+                </div>
             </div>
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
-            </div>
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
-            </div>
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
-            </div>
+            {% endfor %}
         </div>
     </div>
-</section>";s:5:"mtime";i:1735845923;s:6:"markup";s:5495:"<section id="partners" class="section-container">
+</section>";s:5:"mtime";i:1737482641;s:6:"markup";s:578:"<section id="partners" class="section-container">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title text-left text-white wow fadeInDown">Social Proof</h2>
+            <h2 class="section-title text-left text-white wow fadeInDown">{{ component.name}}</h2>
         </div>
-        <div class="partners-carousel"> 
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
+        <div class="row"> 
+            {% for client in clients %}
+            <div class="col-2">
+                <div class="partners-holder">
+                    <img src="{{ client.client_cover.path }}" alt="{{ client.name}}">
+                </div>
             </div>
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
-            </div>
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
-            </div>
-            <div class="carousel-partners-item">
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>             
-                <div class="row partners-box">
-                    {% for component_item in component.component_items %}
-                        {% partial component_item.r_component_item_type.partial component_item=component_item%}
-                    {% endfor %}
-                </div>            
-            </div>
+            {% endfor %}
         </div>
     </div>
-</section>";s:4:"code";N;}}
+</section>";s:4:"code";s:190:"    use FirstWave\WorkProject\Models\Client;
+
+    function onStart(){
+        $this->prepareVars();
+    }
+
+    function prepareVars(){
+        $this['clients'] = Client::get();
+    }";s:17:"_PARSER_ERROR_INI";s:0:"";}}

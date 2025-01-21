@@ -1,4 +1,4 @@
-1737230701a:1:{s:14:"inc/footer.htm";a:6:{s:8:"fileName";s:14:"inc/footer.htm";s:7:"content";s:1613:"==
+1737484688a:1:{s:14:"inc/footer.htm";a:6:{s:8:"fileName";s:14:"inc/footer.htm";s:7:"content";s:1613:"==
 {##}
 <footer id="footer" class="{{this_page == 'ventures' ? 'bg-v-dark' : 'bg-dark'}}">
     <div class="container">

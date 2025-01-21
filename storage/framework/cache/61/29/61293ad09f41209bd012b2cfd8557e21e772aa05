@@ -1,4 +1,4 @@
-1737230700a:1:{s:23:"widgets/modal-cards.htm";a:6:{s:8:"fileName";s:23:"widgets/modal-cards.htm";s:7:"content";s:1602:"==
+1737481225a:1:{s:23:"widgets/modal-cards.htm";a:6:{s:8:"fileName";s:23:"widgets/modal-cards.htm";s:7:"content";s:1611:"==
 {##}
 <div class="card-group">
     <div class="card">
@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div class="card">
+    <!-- <div class="card">
         <a class="card-url" href="{{ 'ventures/home'|page }}">First Wave Ventures</a>
         <div class="menu-img-holder p-2 fw-tab3">
             <div class="menu-img text-center">
@@ -35,8 +35,8 @@
                 <img src="{{ 'assets/images/firstwave-ventures.svg'|theme }}" alt="First Wave Ventures">
             </div>
         </div>
-    </div>
-</div>";s:5:"mtime";i:1728245981;s:6:"markup";s:1598:"{##}
+    </div> -->
+</div>";s:5:"mtime";i:1737479074;s:6:"markup";s:1607:"{##}
 <div class="card-group">
     <div class="card">
         <a class="card-url" href="{{ 'firstwave/home'|page }}">First Wave</a>
@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <div class="card">
+    <!-- <div class="card">
         <a class="card-url" href="{{ 'ventures/home'|page }}">First Wave Ventures</a>
         <div class="menu-img-holder p-2 fw-tab3">
             <div class="menu-img text-center">
@@ -72,5 +72,5 @@
                 <img src="{{ 'assets/images/firstwave-ventures.svg'|theme }}" alt="First Wave Ventures">
             </div>
         </div>
-    </div>
+    </div> -->
 </div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

@@ -1,5 +1,5 @@
 <?php 
-class Cms678c0718bda10419430957_7724415b27b7c09e474bf740126a74b9Class extends Cms\Classes\PageCode
+class Cms678fd9b68e033717053450_5c746d85c7f623facab85df540c371b1Class extends Cms\Classes\PageCode
 {
 public function onStart() {
     $page      = Cms\Models\Page::getComponent("/firstwave");

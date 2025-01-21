@@ -1,4 +1,4 @@
-1737230706a:1:{s:31:"banner/component_item/item1.htm";a:6:{s:8:"fileName";s:31:"banner/component_item/item1.htm";s:7:"content";s:242:"==
+1737484663a:1:{s:31:"banner/component_item/item1.htm";a:6:{s:8:"fileName";s:31:"banner/component_item/item1.htm";s:7:"content";s:242:"==
 function onStart() {
     $this['fade_type'] = Cms\Models\ComponentItem::FADE_TYPE;
 }

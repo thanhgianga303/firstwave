@@ -1,4 +1,4 @@
-1737230706a:1:{s:11:"inc/nav.htm";a:6:{s:8:"fileName";s:11:"inc/nav.htm";s:7:"content";s:5595:"==
+1737484663a:1:{s:11:"inc/nav.htm";a:6:{s:8:"fileName";s:11:"inc/nav.htm";s:7:"content";s:5604:"==
 {##}
 <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container">
@@ -62,7 +62,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="dropdown-item" href="{{ 'ventures/home'|page }}">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 {% if this_page == 'x'%}
@@ -107,7 +107,7 @@
             </ul>
         </div>
     </div>
-</nav>";s:5:"mtime";i:1728245976;s:6:"markup";s:5591:"{##}
+</nav>";s:5:"mtime";i:1737385232;s:6:"markup";s:5600:"{##}
 <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <div class="container">
         {% if this_page == 'x'%}
@@ -170,7 +170,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="dropdown-item" href="{{ 'ventures/home'|page }}">
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">
@@ -181,7 +181,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 {% if this_page == 'x'%}
