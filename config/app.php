@@ -41,7 +41,8 @@ return [
     |
     */
 
-    'url' => 'https://localhost/firstwave/',
+    // 'url' => 'http://127.0.0.1:8000/',//local
+    'url' => 'https://firstwave.faintiyo-media.shop/',//demo
 
     /*
     |--------------------------------------------------------------------------
